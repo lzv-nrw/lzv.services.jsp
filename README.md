@@ -19,7 +19,7 @@ API for veraPDF encloses:
 
 ## License ##
 
-lzv.services.jsp is licensed under 
+lzv.services.jsp is licensed under [GNU Lesser General public License](LICENSE)
 
 veraPDF is licensed under [GNU General public license GPLv3+](https://docs.verapdf.org/develop/LICENSE.GPL)
 
