@@ -31,23 +31,29 @@
   src: url('../fonts/wix-madefor-text-v13-latin_latin-ext-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+*
+{
+  box-sizing: border-box;
+}
+
 body {
         font-family: 'Wix Madefor Text','Open Sans',sans-serif;
         color: black;
 }
 
+div.head {
+	display:flex;
+	flex-wrap: wrap;
+}
 
 div.menu{
-    margin-top: 0.5em;
-    padding: 0em;
-	width: 10%;
-	display:block;
+ text-align: center;	
 }
 
 div.submenu {
 	padding: 0em;
 	display: none;
-	width: 10%;
+	width: 20%;
 	z-index: 10;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);	
 }
@@ -65,9 +71,12 @@ div.submenu {
 }
 
 .dropdown {
-	position:relative;
+    display:flex;
+    flex-wrap: wrap;
+    flex: 20%;
+    margin-top: 0.5em;
+    padding: 0em;
 	padding-left: 1em;
-	display: block;
 }
 .dropdown:hover div.menu {
 	background-color: #fff;

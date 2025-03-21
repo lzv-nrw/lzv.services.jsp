@@ -52,11 +52,19 @@
     <url-pattern>/about/*</url-pattern>
    </servlet-mapping>
    <servlet>
-    <servlet-name>jspFileUpload</servlet-name>
+    <servlet-name>verapdfFileUpload</servlet-name>
     <jsp-file>/jsp/ValidateForm.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
-    <servlet-name>jspFileUpload</servlet-name>
+    <servlet-name>verapdfFileUpload</servlet-name>
     <url-pattern>/verapdf/upload/*</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>pdfboxFileUpload</servlet-name>
+    <jsp-file>/jsp/VersionForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pdfboxFileUpload</servlet-name>
+    <url-pattern>/pdfbox/upload/*</url-pattern>
   </servlet-mapping>
 </web-app>
