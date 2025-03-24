@@ -41,25 +41,35 @@ body {
         color: black;
 }
 
+a img {
+	height: 20px;
+}
+
 div.head {
 	display:flex;
 	flex-wrap: wrap;
 }
 
 div.menu{
- text-align: center;	
+ text-align: left;
+}
+
+div.menu p {
+    display: table-cell;
+	vertical-align: text-middle;	
 }
 
 div.submenu {
 	padding: 0em;
 	display: none;
-	width: 20%;
+	width: 14%;
 	z-index: 10;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);	
 }
 
 .submenu li {
 	list-style-type: disclosure-closed;
+	text-align: left;
 }
 
 .submenu a {
@@ -70,10 +80,15 @@ div.submenu {
 	color: black;
 }
 
+.submenu a:hover {
+	color: green;
+}
+
+
 .dropdown {
     display:flex;
     flex-wrap: wrap;
-    flex: 20%;
+    flex: 150px;
     margin-top: 0.5em;
     padding: 0em;
 	padding-left: 1em;
@@ -105,12 +120,15 @@ img.menu{
 	color: #777;
 }
 
+a {
+	color: black;
+}
 a:visited {
-	color: #777;
+	color: black;
 }
 
 a:hover {
-	color: black;
+	color: green;
 }
 
 .success {

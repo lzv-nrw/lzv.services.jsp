@@ -39,7 +39,7 @@ public class CallasMenuTemplate extends MenuTemplate {
     StringBuffer menuPlug = new StringBuffer();
     menuPlug = new StringBuffer();
     menuPlug.append("<div class=\"dropdown\"><div class=\"menu\"><img class=\"menu\" src=\"/lzv-jsp/images/callas-favicon.ico\" />"
-        + "pdfaPilot<div class=\"submenu\"><ul>");
+        + "<p>pdfaPilot</p><div class=\"submenu\"><ul>");
         for(int i=0; i< menuEntries.size(); i++) {
           menuPlug.append("<li>" + menuEntries.get(i) + "</li>");
         }

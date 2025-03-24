@@ -6,9 +6,8 @@
 	<h1>PDF Upload zur Nutzung des lzv-Services veraPDF-Validierung</h1>
 		<div class="verapdf-form validation">
 			<form action="/lzv-api/verapdf/validate" method="post" enctype="multipart/form-data">
-        		<p>PDF wählen</p>
-				<input class="file-upload" type="file" name="file">
-				</input>
+        		<label for="file"><h3>PDF wählen</h3></label><br/>
+				<input class="file-upload" type="file" id="file" name="file" /><br/>				
 				<input type="submit" value="Abschicken"></input>
 			</form>
 		</div>
