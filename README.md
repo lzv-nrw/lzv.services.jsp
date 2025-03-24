@@ -1,3 +1,5 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/fee8903013d14e1a8fc9b148c180a196)](https://app.codacy.com/gh/lzv-nrw/lzv.services.jsp/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
 # LZV Services Frontend #
 
 ## About the lzv.services.jsp ##
