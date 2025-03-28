@@ -53,7 +53,7 @@
    </servlet-mapping>
    <servlet>
     <servlet-name>verapdfFileUpload</servlet-name>
-    <jsp-file>/jsp/ValidateForm.jsp</jsp-file>
+    <jsp-file>/jsp/VeraPdfUpload.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
     <servlet-name>verapdfFileUpload</servlet-name>
@@ -61,10 +61,18 @@
   </servlet-mapping>
    <servlet>
     <servlet-name>pdfboxFileUpload</servlet-name>
-    <jsp-file>/jsp/VersionForm.jsp</jsp-file>
+    <jsp-file>/jsp/PdfBoxUpload.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
     <servlet-name>pdfboxFileUpload</servlet-name>
     <url-pattern>/pdfbox/upload/*</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>pdfaPilotFileUpload</servlet-name>
+    <jsp-file>/jsp/PdfaPilotUpload.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pdfaPilotFileUpload</servlet-name>
+    <url-pattern>/pdfapilot/upload/*</url-pattern>
   </servlet-mapping>
 </web-app>

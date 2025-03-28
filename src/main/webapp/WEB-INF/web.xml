@@ -30,17 +30,19 @@
     <request-character-encoding>UTF-8</request-character-encoding>
 
   <display-name>de.nrw.hbz.lzv.services.plugin.verapdf.service.rest.impl.JerseyServerImpl</display-name>
-  
   <servlet>
-    <servlet-name>pdfs</servlet-name>
+    <servlet-name>lzv-jsp</servlet-name>
     <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
-   <load-on-startup>1</load-on-startup>
+    <init-param>
+      <param-name>jersey.config.server.provider.packages</param-name>
+      <param-value>de.nrw.hbz.lzv.services</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <servlet-name>pdfs</servlet-name>
-    <url-pattern>/pdfs/*</url-pattern>
+    <servlet-name>lzv-jsp</servlet-name>
+    <url-pattern>/lzv-jsp/*</url-pattern>
    </servlet-mapping>
-
   <servlet>
     <servlet-name>about</servlet-name>
     <jsp-file>/jsp/Index.jsp</jsp-file>
@@ -50,20 +52,27 @@
     <url-pattern>/about/*</url-pattern>
    </servlet-mapping>
    <servlet>
-    <servlet-name>jspFileUpload</servlet-name>
-    <jsp-file>/jsp/ValidateForm.jsp</jsp-file>
+    <servlet-name>verapdfFileUpload</servlet-name>
+    <jsp-file>/jsp/VeraPdfUpload.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
-    <servlet-name>jspFileUpload</servlet-name>
-    <url-pattern>verapdf/upload/*</url-pattern>
+    <servlet-name>verapdfFileUpload</servlet-name>
+    <url-pattern>/verapdf/upload/*</url-pattern>
   </servlet-mapping>
-  <servlet>
+   <servlet>
     <servlet-name>pdfboxFileUpload</servlet-name>
-    <jsp-file>/jsp/VersionForm.jsp</jsp-file>
+    <jsp-file>/jsp/PdfBoxUpload.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
     <servlet-name>pdfboxFileUpload</servlet-name>
     <url-pattern>/pdfbox/upload/*</url-pattern>
-  </servlet-mapping> 
-   
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>pdfaPilotFileUpload</servlet-name>
+    <jsp-file>/jsp/PdfaPilotUpload.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pdfaPilotFileUpload</servlet-name>
+    <url-pattern>/pdfapilot/upload/*</url-pattern>
+  </servlet-mapping>
 </web-app>
