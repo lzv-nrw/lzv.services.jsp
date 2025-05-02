@@ -74,7 +74,7 @@ public class HtmlTemplate {
     
     // Datei
     defMenu.append("<div class='dropdown'>");
-    defMenu.append("<div class='menu'>Datei");
+    defMenu.append("<div class='menu todo'>Datei");
     defMenu.append("<div class='submenu'>"
         + "<ul>");
     defMenu.append("<li><a href='/lzv-jsp/upload'>PDF-Datei hochladen</a></li>");
@@ -89,6 +89,7 @@ public class HtmlTemplate {
     defMenu.append("<div class='submenu'>"
         + "<ul>");
     defMenu.append("<li><a href='/lzv-jsp/editMd/form'>PDF-Metadaten ändern</a></li>");
+    defMenu.append("<li><a href='/lzv-jsp/pdfapilot/createpdfa'>PDF/A erzeugen</a></li>");
     defMenu.append("</ul></div></div>");
     defMenu.append("</div>");
 

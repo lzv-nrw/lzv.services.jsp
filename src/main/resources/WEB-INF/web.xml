@@ -55,6 +55,14 @@
     <servlet-name>verapdfFileUpload</servlet-name>
     <jsp-file>/jsp/VeraPdfUpload.jsp</jsp-file>
   </servlet>
+   <servlet>
+    <servlet-name>pdfaPilotCreatePdfA</servlet-name>
+    <jsp-file>/jsp/PdfaPilotCreatePdfA.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pdfaPilotCreatePdfA</servlet-name>
+    <url-pattern>/pdfapilot/createpdfa/*</url-pattern>
+  </servlet-mapping>
   <servlet-mapping>
     <servlet-name>verapdfFileUpload</servlet-name>
     <url-pattern>/verapdf/upload/*</url-pattern>
