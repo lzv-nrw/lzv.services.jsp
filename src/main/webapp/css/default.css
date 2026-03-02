@@ -7,7 +7,6 @@
   font-weight: 400;
   src: url('../fonts/wix-madefor-text-v13-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
 /* wix-madefor-text-italic - latin_latin-ext */
 
 @font-face {
@@ -71,7 +70,7 @@ div.submenu {
 	display: none;
 	width: 14%;
 	z-index: 10;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,20%);	
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,20%);	
 }
 
 .submenu li {

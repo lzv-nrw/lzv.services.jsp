@@ -71,7 +71,7 @@ div.submenu {
 	display: none;
 	width: 14%;
 	z-index: 10;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,20%);	
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,20%);	
 }
 
 .submenu li {
