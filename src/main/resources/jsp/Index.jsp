@@ -12,7 +12,7 @@
 	<ul>
 	<li><a href="/lzv-jsp/pdfbox/upload">Bestimmung der Version von PDF-Dateien allgemein (nutzt PDFbox &nbsp;<img src="images/pdfbox-favicon.ico" />&nbsp;)</a></li>
 	<li><a href="/lzv-jsp/verapdf/upload">Online-Bestimmung und -Validierung von PDF/A-Dateien mittels Webformular (nutzt veraPDF &nbsp;<img src="images/verapdf-favicon-32x32.png" />&nbsp;) </a></li>
-	<li><a href="https://github.com/lzv-nrw/lzv.services.pdf?tab=readme-ov-file#use-api-calls" target="_blank">RESTful-API zur Bestimmung und -Validierung von PDF/A-Dateien (nutzt veraPDF) &#8599;</a></li>
+	<li><a href="https://github.com/lzv-nrw/lzv.services.pdf?tab=readme-ov-file#use-api-calls" target="_blank">RESTful-API zur Bestimmung und -Validierung von PDF/A-Dateien (nutzt veraPDF)<i class="fa-solid fa-arrow-up-right-from-square" style="margin-left:5px;"></i></a></li>
 	<li><a href="/lzv-jsp/pdfapilot/createpdfa">Erstellen von PDF/A-Dateien (nutzt Callas PDFA-Pilot)</a>
 	</ul>
 
