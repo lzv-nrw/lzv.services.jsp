@@ -87,6 +87,16 @@ div.submenu {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,20%);
 }
 
+div ul {
+   line-height: 1.5em;
+}
+
+div label[for="pdffile"],div label[for="file"] {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 .submenu ul {
   padding-left: 0;
   margin: 0;
@@ -134,6 +144,10 @@ div.submenu {
 	position: absolute;
 	display:block;
 	z-index: 10;
+}
+
+select[name="flavour"] {
+	margin-right: 15px;
 }
 
 span.arrow {

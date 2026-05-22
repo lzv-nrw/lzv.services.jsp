@@ -4,7 +4,7 @@
 <%= new String(de.nrw.hbz.lzv.services.template.HtmlTemplate.getHtmlHead()) %>
 
 	<h1>LZV-Services für PDF-Dateien</h1>
-	<p>Mit lzv.services.pdf soll ein Webservice-Framework aufgebaut werden, dass unterschiedliche Werkzeuge 
+	<p>Mit ValiFY soll ein Webservice-Framework aufgebaut werden, dass unterschiedliche Werkzeuge
 	zusammenführt, die für die Langzeitverfügbarkeit von PDF-Dateien hilfreich sind.</p>
 	<p>Über das Webservice-Framework sollen Werkzeuge, die sonst zusammengesucht, einzeln installiert
 	 und betrieben werden müssen, an zentraler Stelle ereichbar und nutzbar werden.</p>
