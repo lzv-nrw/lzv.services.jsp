@@ -7,10 +7,11 @@
 <div class="pdfapilot-form validation">
 	<form action="/lzv-api/convert/pdfapilot" method="post"
 		enctype="multipart/form-data">
-		<label for="file">PDF und Flavour wählen</label><br /> <input class="file-upload"
-			type="file" id="file" name="file" /> <br />
+		<label for="file">PDF und Flavour wählen</label><br /> <input
+			class="file-upload" type="file" id="file" name="file" /> <br />
 		<p>
 			Flavour: <select name="flavour" id="flavour">
+				<option value="auto">Automatisch (erster erfolgreicher)</option>
 				<option value="1a">1a</option>
 				<option value="1b" selected>1b</option>
 				<option value="2a">2a</option>
