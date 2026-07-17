@@ -3,7 +3,7 @@
 
 <%=de.nrw.hbz.lzv.services.template.HtmlTemplate.getHtmlHead()%>
 
-<h1>PDF Upload zur PDF/A-Erstellung mit dem pdfaPilot</h1>
+<h1>PDF Upload zur PDF/A-Erstellung mit pdfaPilot</h1>
 <div class="pdfapilot-form validation">
 	<form action="/lzv-api/convert/pdfapilot" method="post"
 		enctype="multipart/form-data">
