@@ -114,14 +114,7 @@ public class HtmlTemplate {
     // Werkzeuge
     defMenu.append("<div class='dropdown'>");
     defMenu.append("<div class='menu'><a href='/lzv-api/tools'>Werkzeuge</a>");
-    defMenu.append("<i class=\"fa-solid fa-chevron-down\"  style=\"margin-left:5px;\"></i>");
-    defMenu.append("<div class='submenu'>"
-        + "<ul>");
-    defMenu.append("<li><a href='/lzv-api/version/pdfbox'>PDFbox</a></li>");
-    defMenu.append("<li><a href='/lzv-api/version/verapdf'>VeraPDF</a></li>");
-    defMenu.append("<li><a href='/lzv-api/version/pdfapilot'>pdfaPilot</a></li>");
-    defMenu.append("</ul></div></div>");
-    defMenu.append("</div>");
+    defMenu.append("</div></div>");
     
     
     
