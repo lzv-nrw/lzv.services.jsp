@@ -204,6 +204,11 @@ i {
   margin-right: 0.25em;
 }
 
+li i {
+  font-size: small;
+  margin-left: 5px;
+}
+
 .success {
   color: green;
 }
