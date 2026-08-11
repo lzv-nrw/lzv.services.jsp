@@ -44,8 +44,10 @@
 }
 
 body {
-        font-family: 'Wix Madefor Text','Open Sans',sans-serif;
-        color: black;
+  font-family: 'Wix Madefor Text','Open Sans',sans-serif;
+  color: black;
+  background-color: #f3f3f3;
+  margin: 0;
 }
 
 a img {
@@ -53,8 +55,19 @@ a img {
 }
 
 div.head {
-	display:flex;
-	flex-wrap: wrap;
+  display:flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  margin-bottom: 0px;
+  background-color: #FFF;
+  max-width: 1550px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0px -2px 10px 5px #f3f3f3;
+  padding: 20px;
+  font-size: 20px;
 }
 
 div.menu{
@@ -62,21 +75,44 @@ div.menu{
 }
 
 div.menu p {
-    display: table-cell;
+  display: table-cell;
 	vertical-align: text-middle;	
 }
 
 div.submenu {
-	padding: 0em;
-	display: none;
-	width: 14%;
-	z-index: 10;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,20%);	
+  padding: 1em;
+  display: none;
+  z-index: 10;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,20%);
+}
+
+div ul {
+   line-height: 1.5em;
+}
+
+div label[for="pdffile"],div label[for="file"] {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.submenu ul {
+  padding-left: 0;
+  margin: 0;
 }
 
 .submenu li {
-	list-style-type: disclosure-closed;
-	text-align: left;
+  list-style: none;
+  position: relative;
+  padding: 0.3em;
+  font-size: 18px;
+}
+
+.submenu li::before {
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 5px;
 }
 
 .submenu a {
@@ -93,11 +129,10 @@ div.submenu {
 
 
 .dropdown {
-    display:flex;
-    flex-wrap: wrap;
-    flex: 150px;
-    margin-top: 0.5em;
-    padding: 0em;
+  display:flex;
+  flex-wrap: wrap;
+  flex: 150px;
+  padding: 0em;
 	padding-left: 1em;
 }
 .dropdown:hover div.menu {
@@ -110,6 +145,13 @@ div.submenu {
 	z-index: 10;
 }
 
+select[name="flavour"] {
+	margin-right: 15px;
+}
+
+span.arrow {
+	font-size: 20px;
+}
 
 img.menu{
 	height: 24px;
@@ -121,9 +163,25 @@ img.menu{
 }
 
 .main {
-	width: 100%;
-	height: 80%;
-	background-color: #fff;
+  width: 100%;
+  height: 85%;
+  background-color: #fff;
+  display: block;
+  padding: 10px;
+  padding-left: 20px;
+  max-width: 1550px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer {
+  background-color: #fff;
+  border-top: 0px solid #cfd6dc;
+  margin-top: 0px;
+  box-shadow: 0px 2px 10px 5px #f3f3f3;
+  padding: 40px 0 40px 0;
+  color: #cccccc;
+  clear: both;
 }
 
 .fanker {
@@ -142,10 +200,19 @@ a:hover {
 	color: green;
 }
 
+i {
+  margin-right: 0.25em;
+}
+
+li i {
+  font-size: small;
+  margin-left: 5px;
+}
+
 .success {
-        color: green;
+  color: green;
 }
 
 .error {
-        color: red;
+  color: red;
 }

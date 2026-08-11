@@ -25,6 +25,7 @@ public class HtmlTemplate {
     StringBuffer headSb = new StringBuffer();
     headSb.append("<html>\n" + "<head>\n" + "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n"
         + "<link rel=\"stylesheet\" href=\"/lzv-jsp/css/default.css\" />\n" 
+        + "<link rel=\"stylesheet\" href=\"/lzv-jsp/fontawesome/css/all.min.css\">"
         + "<title>hbz lzv services</title>\n" + "</head>\n<body>\n");
     headSb.append("<div class=\"head\">");
     
@@ -32,7 +33,7 @@ public class HtmlTemplate {
     
     //headSb.append(getMenuEntry());
     
-    headSb.append("</div></div><div class=\"main\"><hr/>");
+    headSb.append("</div></div><div class=\"main\">");
 
     return headSb.toString();
   }
@@ -42,8 +43,8 @@ public class HtmlTemplate {
    */
   public static String getHtmlFoot() {
     StringBuffer footSb = new StringBuffer();
-    footSb.append("</div>\n<div class=\"footer\">");
-    footSb.append("<hr/><a class=\"fanker\" href=\"/lzv-jsp/about\">Über</a>");
+    footSb.append("</div>\n<footer class=\"footer\">");
+    footSb.append("<a class=\"fanker\" href=\"/lzv-jsp/about\">Über</a></footer>");
     footSb.append("</body>\n</html>");
 
     return footSb.toString();
@@ -71,24 +72,29 @@ public class HtmlTemplate {
   
   private static String getDefaultMenu() {
     StringBuffer defMenu = new StringBuffer();
-    
-    // Datei
+
+    // Startseite
     defMenu.append("<div class='dropdown'>");
-    defMenu.append("<div class='menu todo'>Datei");
-    defMenu.append("<div class='submenu'>"
-        + "<ul>");
-    defMenu.append("<li><a href='/lzv-jsp/upload'>PDF-Datei hochladen</a></li>");
-    defMenu.append("<li><a href='/lzv-jsp/save'>PDF-Datei herunterladen</a></li>");
-    defMenu.append("</ul></div></div>");
-    defMenu.append("</div>");
-    
-    
+    defMenu.append("<div class='menu'><a href='/lzv-jsp/about'>Startseite</a>");
+    defMenu.append("</div></div>");
+
+    // Datei
+	/*
+	 * defMenu.append("<div class='dropdown'>");
+	 * defMenu.append("<div class='menu todo'>Datei");
+	 * defMenu.append("<div class='submenu'>" + "<ul>");
+	 * defMenu.append("<li><a href='/lzv-jsp/upload'>PDF-Datei hochladen</a></li>");
+	 * defMenu.append("<li><a href='/lzv-jsp/save'>PDF-Datei herunterladen</a></li>"
+	 * ); defMenu.append("</ul></div></div>"); defMenu.append("</div>");
+	 */
+
     // Bearbeiten
     defMenu.append("<div class='dropdown'>");
     defMenu.append("<div class='menu'>Bearbeiten");
+    defMenu.append("<i class=\"fa-solid fa-chevron-down\"  style=\"margin-left:5px;\"></i>");
     defMenu.append("<div class='submenu'>"
         + "<ul>");
-    defMenu.append("<li><a href='/lzv-jsp/editMd/form'>PDF-Metadaten ändern</a></li>");
+    // defMenu.append("<li><a href='/lzv-jsp/editMd/form'>PDF-Metadaten ändern</a></li>");
     defMenu.append("<li><a href='/lzv-jsp/pdfapilot/createpdfa'>PDF/A erzeugen</a></li>");
     defMenu.append("</ul></div></div>");
     defMenu.append("</div>");
@@ -96,6 +102,7 @@ public class HtmlTemplate {
     // Analyse
     defMenu.append("<div class='dropdown'>");
     defMenu.append("<div class='menu'>Analyse");
+    defMenu.append("<i class=\"fa-solid fa-chevron-down\"  style=\"margin-left:5px;\"></i>");
     defMenu.append("<div class='submenu'>"
         + "<ul>");
     defMenu.append("<li><a href='/lzv-jsp/pdfbox/upload'>PDF-Validierung (PDFbox)</a></li>");
@@ -106,14 +113,8 @@ public class HtmlTemplate {
 
     // Werkzeuge
     defMenu.append("<div class='dropdown'>");
-    defMenu.append("<div class='menu'>Werkzeuge");
-    defMenu.append("<div class='submenu'>"
-        + "<ul>");
-    defMenu.append("<li><a href='/lzv-api/version/pdfbox'>PDFbox</a></li>");
-    defMenu.append("<li><a href='/lzv-api/version/verapdf'>VeraPDF</a></li>");
-    defMenu.append("<li><a href='/lzv-api/version/pdfapilot'>pdfaPilot</a></li>");
-    defMenu.append("</ul></div></div>");
-    defMenu.append("</div>");
+    defMenu.append("<div class='menu'><a href='/lzv-api/tools'>Werkzeuge</a>");
+    defMenu.append("</div></div>");
     
     
     

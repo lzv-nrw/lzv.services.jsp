@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html"; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 
 <%=de.nrw.hbz.lzv.services.template.HtmlTemplate.getHtmlHead()%>
 
@@ -6,9 +7,9 @@
 <div class="verapdf-form validation">
 	<form action="/lzv-api/validate/verapdf" method="post"
 		enctype="multipart/form-data">
-		<label for="file"><h3>PDF wählen</h3></label> <input
-			class="file-upload" type="file" id="file" name="file" /><br /> <input
-			type="submit" value="Abschicken"></input>
+		<label for="file">PDF wählen</label><br /> <input class="file-upload"
+			type="file" id="file" name="file" /> <input type="submit"
+			value="Abschicken"></input>
 	</form>
 </div>
 
