@@ -165,13 +165,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 		<dependency>
     		<groupId>org.apache.pdfbox</groupId>
     		<artifactId>pdfbox</artifactId>
-    		<version>3.0.4</version>
+    		<version>3.0.8</version>
 		</dependency>
 <!-- https://mvnrepository.com/artifact/org.apache.pdfbox/preflight -->
 		<dependency>
     		<groupId>org.apache.pdfbox</groupId>
     		<artifactId>preflight</artifactId>
-    		<version>3.0.4</version>
+    		<version>3.0.8</version>
 		</dependency>
 
 
