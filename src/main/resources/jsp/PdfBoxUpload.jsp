@@ -4,10 +4,10 @@
 <%=de.nrw.hbz.lzv.services.template.HtmlTemplate.getHtmlHead()%>
 
 <h1>PDF Upload zur PDF-Validierung mit PDFbox</h1>
-<div class="pdfbox-form version">
+<div styleclass="pdfbox-form version">
 	<form action="/lzv-api/validate/pdfbox" method="post"
 		enctype="multipart/form-data">
-		<label for="pdffile">PDF wählen</label><br /> <input class="file-upload"
+		<label for="pdffile">PDF wählen</label><br /> <input styleclass="file-upload"
 			type="file" name="file" /> <input type="submit" value="Abschicken"></input>
 	</form>
 </div>

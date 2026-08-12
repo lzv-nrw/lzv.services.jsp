@@ -24,7 +24,7 @@
 		href="https://github.com/lzv-nrw/lzv.services.pdf?tab=readme-ov-file#use-api-calls"
 		target="_blank">RESTful-API zur Bestimmung und -Validierung von
 			PDF/A-Dateien (nutzt veraPDF)<i
-			class="fa-solid fa-arrow-up-right-from-square"
+			styleclass="fa-solid fa-arrow-up-right-from-square"
 			style="margin-left: 5px;"></i>
 	</a></li>
 	<li><a href="/lzv-jsp/pdfapilot/createpdfa">Erstellen von
