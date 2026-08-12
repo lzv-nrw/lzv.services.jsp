@@ -1,53 +1,61 @@
 /* wix-madefor-text-regular - latin_latin-ext */
-
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Wix Madefor Text';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/wix-madefor-text-v13-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	font-display: swap;
+	/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Wix Madefor Text';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/wix-madefor-text-v13-latin_latin-ext-regular.woff2')
+		format('woff2');
+	/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* wix-madefor-text-italic - latin_latin-ext */
-
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Wix Madefor Text';
-  font-style: italic;
-  font-weight: 400;
-  src: url('../fonts/wix-madefor-text-v13-latin_latin-ext-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	font-display: swap;
+	/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Wix Madefor Text';
+	font-style: italic;
+	font-weight: 400;
+	src: url('../fonts/wix-madefor-text-v13-latin_latin-ext-italic.woff2')
+		format('woff2');
+	/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* wix-madefor-text-500 - latin_latin-ext */
-
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Wix Madefor Text';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/wix-madefor-text-v13-latin_latin-ext-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	font-display: swap;
+	/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Wix Madefor Text';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/wix-madefor-text-v13-latin_latin-ext-500.woff2')
+		format('woff2');
+	/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* wix-madefor-text-500italic - latin_latin-ext */
-
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Wix Madefor Text';
-  font-style: italic;
-  font-weight: 500;
-  src: url('../fonts/wix-madefor-text-v13-latin_latin-ext-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	font-display: swap;
+	/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Wix Madefor Text';
+	font-style: italic;
+	font-weight: 500;
+	src:
+		url('../fonts/wix-madefor-text-v13-latin_latin-ext-500italic.woff2')
+		format('woff2');
+	/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-*
-{
-  box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
 body {
-  font-family: 'Wix Madefor Text','Open Sans',sans-serif;
-  color: black;
-  background-color: #f3f3f3;
-  margin: 0;
+	font-family: 'Wix Madefor Text', 'Open Sans', sans-serif;
+	color: black;
+	background-color: #f3f3f3;
+	margin: 0;
 }
 
 a img {
@@ -55,64 +63,64 @@ a img {
 }
 
 div.head {
-  display:flex;
-  flex-wrap: wrap;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  margin-bottom: 0px;
-  background-color: #FFF;
-  max-width: 1550px;
-  margin-right: auto;
-  margin-left: auto;
-  box-shadow: 0px -2px 10px 5px #f3f3f3;
-  padding: 20px;
-  font-size: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	margin-bottom: 0px;
+	background-color: #FFF;
+	max-width: 1550px;
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: 0px -2px 10px 5px #f3f3f3;
+	padding: 20px;
+	font-size: 20px;
 }
 
-div.menu{
- text-align: left;
+div.menu {
+	text-align: left;
 }
 
 div.menu p {
-  display: table-cell;
-	vertical-align: text-middle;	
+	display: table-cell;
+	vertical-align: text-middle;
 }
 
 div.submenu {
-  padding: 1em;
-  display: none;
-  z-index: 10;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,20%);
+	padding: 1em;
+	display: none;
+	z-index: 10;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 20%);
 }
 
 div ul {
-   line-height: 1.5em;
+	line-height: 1.5em;
 }
 
-div label[for="pdffile"],div label[for="file"] {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
+div label[for="pdffile"], div label[for="file"] {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 .submenu ul {
-  padding-left: 0;
-  margin: 0;
+	padding-left: 0;
+	margin: 0;
 }
 
 .submenu li {
-  list-style: none;
-  position: relative;
-  padding: 0.3em;
-  font-size: 18px;
+	list-style: none;
+	position: relative;
+	padding: 0.3em;
+	font-size: 18px;
 }
 
 .submenu li::before {
-  content: "\f054";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  margin-right: 5px;
+	content: "\f054";
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	margin-right: 5px;
 }
 
 .submenu a {
@@ -127,21 +135,22 @@ div label[for="pdffile"],div label[for="file"] {
 	color: green;
 }
 
-
 .dropdown {
-  display:flex;
-  flex-wrap: wrap;
-  flex: 150px;
-  padding: 0em;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 150px;
+	padding: 0em;
 	padding-left: 1em;
 }
+
 .dropdown:hover div.menu {
 	background-color: #fff;
 }
+
 .dropdown:hover .submenu {
 	background-color: #fff;
 	position: absolute;
-	display:block;
+	display: block;
 	z-index: 10;
 }
 
@@ -153,7 +162,7 @@ span.arrow {
 	font-size: 20px;
 }
 
-img.menu{
+img.menu {
 	height: 24px;
 	padding-right: 0.2em;
 }
@@ -163,25 +172,25 @@ img.menu{
 }
 
 .main {
-  width: 100%;
-  height: 85%;
-  background-color: #fff;
-  display: block;
-  padding: 10px;
-  padding-left: 20px;
-  max-width: 1550px;
-  margin-right: auto;
-  margin-left: auto;
+	width: 100%;
+	height: 85%;
+	background-color: #fff;
+	display: block;
+	padding: 10px;
+	padding-left: 20px;
+	max-width: 1550px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .footer {
-  background-color: #fff;
-  border-top: 0px solid #cfd6dc;
-  margin-top: 0px;
-  box-shadow: 0px 2px 10px 5px #f3f3f3;
-  padding: 40px 0 40px 0;
-  color: #cccccc;
-  clear: both;
+	background-color: #fff;
+	border-top: 0px solid #cfd6dc;
+	margin-top: 0px;
+	box-shadow: 0px 2px 10px 5px #f3f3f3;
+	padding: 40px 0 40px 0;
+	color: #cccccc;
+	clear: both;
 }
 
 .fanker {
@@ -192,6 +201,7 @@ img.menu{
 a {
 	color: black;
 }
+
 a:visited {
 	color: black;
 }
@@ -201,18 +211,18 @@ a:hover {
 }
 
 i {
-  margin-right: 0.25em;
+	margin-right: 0.25em;
 }
 
 li i {
-  font-size: small;
-  margin-left: 5px;
+	font-size: small;
+	margin-left: 5px;
 }
 
 .success {
-  color: green;
+	color: green;
 }
 
 .error {
-  color: red;
+	color: red;
 }
