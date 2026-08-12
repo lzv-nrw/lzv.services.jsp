@@ -139,7 +139,7 @@ div label[for="pdffile"], div label[for="file"] {
 	display: flex;
 	flex-wrap: wrap;
 	flex: 150px;
-	padding: 0em;
+	padding: 0;
 	padding-left: 1em;
 }
 
