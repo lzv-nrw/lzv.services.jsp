@@ -4,11 +4,11 @@
 <%=de.nrw.hbz.lzv.services.template.HtmlTemplate.getHtmlHead()%>
 
 <h1>PDF Upload zur PDF/A-Erstellung mit pdfaPilot</h1>
-<div class="pdfapilot-form validation">
+<div styleclass="pdfapilot-form validation">
 	<form action="/lzv-api/convert/pdfapilot" method="post"
 		enctype="multipart/form-data">
 		<label for="file">PDF und Flavour wählen</label><br /> <input
-			class="file-upload" type="file" id="file" name="file" /> <br />
+			styleclass="file-upload" type="file" id="file" name="file" /> <br />
 		<p>
 			Flavour: <select name="flavour" id="flavour">
 				<option value="auto">Automatisch (erster erfolgreicher)</option>
