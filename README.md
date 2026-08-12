@@ -32,8 +32,11 @@ veraPDF is licensed under [GNU General public license GPLv3+](https://docs.verap
 ## Installation ##
 
 Server installation (requires running Tomcat 10) 
+
 - Clone Repository with `git clone https://github.com/lzv-nrw/lzv.services.lzv.git`
+
 - change into local directory `cd lzv.services.jsp`
+
 - run `mvn clean test war:war`
 
 If all tests successfully passed you will find file `lzv-jsp.war` in newly created directory `target`
