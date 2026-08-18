@@ -24,11 +24,10 @@ public class HtmlTemplate {
 	public static String getHtmlHead() {
 		MenuTemplate.initTemplate(MenuTemplate.VERAPDF);
 		StringBuffer headSb = new StringBuffer();
-		headSb.append(
-				"<html>\n" + "<head>\n" + "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n"
-						+ "<link rel=\"stylesheet\" href=\"/lzv-jsp/css/default.css\" />\n"
-						+ "<link rel=\"stylesheet\" href=\"/lzv-jsp/fontawesome/css/all.min.css\">"
-						+ "<title>LZV.nrw - ValiFY</title>\n" + "</head>\n<body>\n");
+		headSb.append("<html>\n" + "<head>\n" + "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n"
+				+ "<link rel=\"stylesheet\" href=\"/lzv-jsp/css/default.css\" />\n"
+				+ "<link rel=\"stylesheet\" href=\"/lzv-jsp/fontawesome/css/all.min.css\">"
+				+ "<title>LZV.nrw - ValiFY</title>\n" + "</head>\n<body>\n");
 		headSb.append("<div class=\"head\">");
 
 		headSb.append(getDefaultMenu());
@@ -97,8 +96,7 @@ public class HtmlTemplate {
 		defMenu.append("<div class='menu'>Bearbeiten");
 		defMenu.append("<i class='fa-solid fa-chevron-down'></i>");
 		defMenu.append("<div class='submenu'>" + "<ul>");
-		// defMenu.append("<li><a href='/lzv-jsp/editMd/form'>PDF-Metadaten
-		// ändern</a></li>");
+		defMenu.append("<li><a href='/lzv-jsp/editMd/form'>PDF-Metadaten ändern</a></li>");
 		defMenu.append("<li><a href='/lzv-jsp/pdfapilot/createpdfa'>PDF/A erzeugen</a></li>");
 		defMenu.append("</ul></div></div>");
 		defMenu.append("</div>");
@@ -120,7 +118,7 @@ public class HtmlTemplate {
 		defMenu.append("</div></div></div>");
 
 		// Logo lzv.nrw
-		defMenu.append("<a id='portal-logo-lzv' title='lzv.nrw' href='https://www.lzv.nrw'>");
+		defMenu.append("<a id='portal-logo-lzv' title='lzv.nrw' href='www.lzv.nrw'>");
 		defMenu.append("<img src='/lzv-jsp/images/lzv-nrw-logo.png' alt='lzv.nrw' title='lzv.nrw'></a>");
 
 		return defMenu.toString();

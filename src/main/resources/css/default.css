@@ -264,6 +264,10 @@ select[name="flavour"] {
 	border-width: thin;
 }
 
+input[name="value"] {
+	margin-right: 15px;
+}
+
 span.arrow {
 	font-size: 20px;
 }

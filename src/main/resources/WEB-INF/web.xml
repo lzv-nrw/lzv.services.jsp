@@ -71,6 +71,10 @@
     <servlet-name>pdfboxFileUpload</servlet-name>
     <jsp-file>/jsp/PdfBoxUpload.jsp</jsp-file>
   </servlet>
+   <servlet>
+    <servlet-name>pdfboxEditFileUpload</servlet-name>
+    <jsp-file>/jsp/PdfBoxEditUpload.jsp</jsp-file>
+  </servlet>
   <servlet-mapping>
     <servlet-name>pdfboxFileUpload</servlet-name>
     <url-pattern>/pdfbox/upload/*</url-pattern>
@@ -82,5 +86,9 @@
   <servlet-mapping>
     <servlet-name>pdfaPilotFileUpload</servlet-name>
     <url-pattern>/pdfapilot/upload/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>pdfboxEditFileUpload</servlet-name>
+    <url-pattern>/pdfbox/editMd</url-pattern>
   </servlet-mapping>
 </web-app>
