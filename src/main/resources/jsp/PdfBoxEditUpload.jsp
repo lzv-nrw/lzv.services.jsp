@@ -4,6 +4,7 @@
 <%=de.nrw.hbz.lzv.services.template.HtmlTemplate.getHtmlHead()%>
 
 <h1>PDF Upload zur PDF-Medadatenbearbeitung mit PDFbox</h1>
+<h2>PDF-Metadaten im Info Dictionary und XMP bearbeiten oder hinzufügen.</h2>
 <div styleclass="pdfbox-form version">
 	<form action="/lzv-api/editmd/pdfbox" method="post"
 		enctype="multipart/form-data">
