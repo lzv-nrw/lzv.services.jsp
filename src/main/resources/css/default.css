@@ -158,6 +158,10 @@ select[name="flavour"] {
 	margin-right: 15px;
 }
 
+input[name="value"] {
+	margin-right: 15px;
+}
+
 span.arrow {
 	font-size: 20px;
 }
