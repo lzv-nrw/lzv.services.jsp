@@ -13,111 +13,116 @@ import de.nrw.hbz.lzv.services.model.MenuTemplate;
  */
 public class HtmlTemplate {
 
-  private static Hashtable<String, String> menu = new Hashtable<>();
-  // private static Hashtable<String, MenuTemplate> templates = new Hashtable<>();
-  // private static MenuTemplate vera = MenuTemplate.initTemplate(MenuTemplate.VERAPDF);
-    
-  /**
-   * @return a HTML-Document Head
-   */
-  public static String getHtmlHead() {
-    MenuTemplate.initTemplate(MenuTemplate.VERAPDF);
-    StringBuffer headSb = new StringBuffer();
-    headSb.append("<html>\n" + "<head>\n" + "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n"
-        + "<link rel=\"stylesheet\" href=\"/lzv-jsp/css/default.css\" />\n" 
-        + "<link rel=\"stylesheet\" href=\"/lzv-jsp/fontawesome/css/all.min.css\">"
-        + "<title>hbz lzv services</title>\n" + "</head>\n<body>\n");
-    headSb.append("<div class=\"head\">");
-    
-    headSb.append(getDefaultMenu());
-    
-    //headSb.append(getMenuEntry());
-    
-    headSb.append("</div></div><div class=\"main\">");
+	private static Hashtable<String, String> menu = new Hashtable<>();
+	// private static Hashtable<String, MenuTemplate> templates = new Hashtable<>();
+	// private static MenuTemplate vera =
+	// MenuTemplate.initTemplate(MenuTemplate.VERAPDF);
 
-    return headSb.toString();
-  }
-
-  /**
-   * @return a HTML-Document Foot
-   */
-  public static String getHtmlFoot() {
-    StringBuffer footSb = new StringBuffer();
-    footSb.append("</div>\n<footer class=\"footer\">");
-    footSb.append("<a class=\"fanker\" href=\"/lzv-jsp/about\">Über</a></footer>");
-    footSb.append("</body>\n</html>");
-
-    return footSb.toString();
-  }
-
-  /**
-   * Method has to be implemented from MenuTemplate of each Plugin 
-   * in order to provide the appropriate Menu Entry for the Plugin 
-   * @param menuKey Menu Name  
-   * @param menuCode html code returned from Plugin MenuTemplate 
-   */
-  public static void appendMenu(String menuKey, String menuCode) {
-    menu.put(menuKey,menuCode);
-  }
-  
-  private static String getMenuEntry() {
-    StringBuffer menuSb = new StringBuffer();
-    Enumeration<String> mEnum = menu.keys();
-    while(mEnum.hasMoreElements()) {
-      String key = mEnum.nextElement();
-         menuSb.append(menu.get(key));
-    }
-   return menuSb.toString(); 
-  }
-  
-  private static String getDefaultMenu() {
-    StringBuffer defMenu = new StringBuffer();
-
-    // Startseite
-    defMenu.append("<div class='dropdown'>");
-    defMenu.append("<div class='menu'><a href='/lzv-jsp/about'>Startseite</a>");
-    defMenu.append("</div></div>");
-
-    // Datei
-	/*
-	 * defMenu.append("<div class='dropdown'>");
-	 * defMenu.append("<div class='menu todo'>Datei");
-	 * defMenu.append("<div class='submenu'>" + "<ul>");
-	 * defMenu.append("<li><a href='/lzv-jsp/upload'>PDF-Datei hochladen</a></li>");
-	 * defMenu.append("<li><a href='/lzv-jsp/save'>PDF-Datei herunterladen</a></li>"
-	 * ); defMenu.append("</ul></div></div>"); defMenu.append("</div>");
+	/**
+	 * @return a HTML-Document Head
 	 */
+	public static String getHtmlHead() {
+		MenuTemplate.initTemplate(MenuTemplate.VERAPDF);
+		StringBuffer headSb = new StringBuffer();
+		headSb.append(
+				"<html>\n" + "<head>\n" + "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n"
+						+ "<link rel=\"stylesheet\" href=\"/lzv-jsp/css/default.css\" />\n"
+						+ "<link rel=\"stylesheet\" href=\"/lzv-jsp/fontawesome/css/all.min.css\">"
+						+ "<title>LZV.nrw - ValiFY</title>\n" + "</head>\n<body>\n");
+		headSb.append("<div class=\"head\">");
 
-    // Bearbeiten
-    defMenu.append("<div class='dropdown'>");
-    defMenu.append("<div class='menu'>Bearbeiten");
-    defMenu.append("<i class=\"fa-solid fa-chevron-down\"  style=\"margin-left:5px;\"></i>");
-    defMenu.append("<div class='submenu'>"
-        + "<ul>");
-    // defMenu.append("<li><a href='/lzv-jsp/editMd/form'>PDF-Metadaten ändern</a></li>");
-    defMenu.append("<li><a href='/lzv-jsp/pdfapilot/createpdfa'>PDF/A erzeugen</a></li>");
-    defMenu.append("</ul></div></div>");
-    defMenu.append("</div>");
+		headSb.append(getDefaultMenu());
 
-    // Analyse
-    defMenu.append("<div class='dropdown'>");
-    defMenu.append("<div class='menu'>Analyse");
-    defMenu.append("<i class=\"fa-solid fa-chevron-down\"  style=\"margin-left:5px;\"></i>");
-    defMenu.append("<div class='submenu'>"
-        + "<ul>");
-    defMenu.append("<li><a href='/lzv-jsp/pdfbox/upload'>PDF-Validierung (PDFbox)</a></li>");
-    defMenu.append("<li><a href='/lzv-jsp/verapdf/upload'>PDF/A-Validierung (veraPDF)</a></li>");
-    defMenu.append("<li><a href='/lzv-jsp/pdfapilot/upload'>PDF- und PDF/A-Validierung (pdfaPilot)</a></li>");
-    defMenu.append("</ul></div></div>");
-    defMenu.append("</div>");
+		// headSb.append(getMenuEntry());
 
-    // Werkzeuge
-    defMenu.append("<div class='dropdown'>");
-    defMenu.append("<div class='menu'><a href='/lzv-api/tools'>Werkzeuge</a>");
-    defMenu.append("</div></div>");
-    
-    
-    
-    return defMenu.toString();
-  }
+		headSb.append("</div></div><div class=\"main\">");
+
+		return headSb.toString();
+	}
+
+	/**
+	 * @return a HTML-Document Foot
+	 */
+	public static String getHtmlFoot() {
+		StringBuffer footSb = new StringBuffer();
+		footSb.append("</div>\n<footer class=\"footer\">");
+		footSb.append("<a class=\"fanker\" href=\"/lzv-jsp/about\">Über</a></footer>");
+		footSb.append("</body>\n</html>");
+
+		return footSb.toString();
+	}
+
+	/**
+	 * Method has to be implemented from MenuTemplate of each Plugin in order to
+	 * provide the appropriate Menu Entry for the Plugin
+	 *
+	 * @param menuKey  Menu Name
+	 * @param menuCode html code returned from Plugin MenuTemplate
+	 */
+	public static void appendMenu(String menuKey, String menuCode) {
+		menu.put(menuKey, menuCode);
+	}
+
+	private static String getMenuEntry() {
+		StringBuffer menuSb = new StringBuffer();
+		Enumeration<String> mEnum = menu.keys();
+		while (mEnum.hasMoreElements()) {
+			String key = mEnum.nextElement();
+			menuSb.append(menu.get(key));
+		}
+		return menuSb.toString();
+	}
+
+	private static String getDefaultMenu() {
+		StringBuffer defMenu = new StringBuffer();
+
+		// Startseite/Logo
+		defMenu.append("<a id='portal-logo' title='valify' href='/lzv-jsp/about'>");
+		defMenu.append("<img src='/lzv-jsp/images/valify_bildmarke.png' alt='ValiFY' title='ValiFY'></a>");
+
+		// Datei
+		/*
+		 * defMenu.append("<div class='dropdown'>");
+		 * defMenu.append("<div class='menu todo'>Datei");
+		 * defMenu.append("<div class='submenu'>" + "<ul>");
+		 * defMenu.append("<li><a href='/lzv-jsp/upload'>PDF-Datei hochladen</a></li>");
+		 * defMenu.append("<li><a href='/lzv-jsp/save'>PDF-Datei herunterladen</a></li>"
+		 * ); defMenu.append("</ul></div></div>"); defMenu.append("</div>");
+		 */
+
+		defMenu.append("<div class='navigation'>");
+
+		// Bearbeiten
+		defMenu.append("<div class='dropdown'>");
+		defMenu.append("<div class='menu'>Bearbeiten");
+		defMenu.append("<i class='fa-solid fa-chevron-down'></i>");
+		defMenu.append("<div class='submenu'>" + "<ul>");
+		// defMenu.append("<li><a href='/lzv-jsp/editMd/form'>PDF-Metadaten
+		// ändern</a></li>");
+		defMenu.append("<li><a href='/lzv-jsp/pdfapilot/createpdfa'>PDF/A erzeugen</a></li>");
+		defMenu.append("</ul></div></div>");
+		defMenu.append("</div>");
+
+		// Analyse
+		defMenu.append("<div class='dropdown'>");
+		defMenu.append("<div class='menu'>Analyse");
+		defMenu.append("<i class='fa-solid fa-chevron-down'></i>");
+		defMenu.append("<div class='submenu'>" + "<ul>");
+		defMenu.append("<li><a href='/lzv-jsp/pdfbox/upload'>PDF-Validierung (PDFbox)</a></li>");
+		defMenu.append("<li><a href='/lzv-jsp/verapdf/upload'>PDF/A-Validierung (veraPDF)</a></li>");
+		defMenu.append("<li><a href='/lzv-jsp/pdfapilot/upload'>PDF- und PDF/A-Validierung (pdfaPilot)</a></li>");
+		defMenu.append("</ul></div></div>");
+		defMenu.append("</div>");
+
+		// Werkzeuge
+		defMenu.append("<div class='dropdown'>");
+		defMenu.append("<div class='menu'><a href='/lzv-api/tools'>Werkzeuge</a>");
+		defMenu.append("</div></div></div>");
+
+		// Logo lzv.nrw
+		defMenu.append("<a id='portal-logo-lzv' title='lzv.nrw' href='www.lzv.nrw'>");
+		defMenu.append("<img src='/lzv-jsp/images/lzv-nrw-logo.png' alt='lzv.nrw' title='lzv.nrw'></a>");
+
+		return defMenu.toString();
+	}
 }
