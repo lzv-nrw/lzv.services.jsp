@@ -120,7 +120,7 @@ public class HtmlTemplate {
 		defMenu.append("</div></div></div>");
 
 		// Logo lzv.nrw
-		defMenu.append("<a id='portal-logo-lzv' title='lzv.nrw' href='www.lzv.nrw'>");
+		defMenu.append("<a id='portal-logo-lzv' title='lzv.nrw' href='https://www.lzv.nrw'>");
 		defMenu.append("<img src='/lzv-jsp/images/lzv-nrw-logo.png' alt='lzv.nrw' title='lzv.nrw'></a>");
 
 		return defMenu.toString();
