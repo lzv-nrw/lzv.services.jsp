@@ -18,96 +18,96 @@
 		style="color: #2ba1d5; font-variant: small-caps;">FY</span>
 </h2>
 <p>
-	ValiFY stellt ein niedrigschwelliges Angebot für die Arbeit mit
-	PDF-Dateien im Kontext der Datenerhaltung und Langzeitverfügbarkeit dar
-	und bündelt dafür unterschiedliche <a data-linktype="internal"
+	ValiFY ist ein niedrigschwelliges Angebot für die Arbeit mit
+	PDF-Dateien im Kontext der Datenerhaltung und Langzeitverfügbarkeit und
+	bündelt dafür unterschiedliche <a data-linktype="internal"
 		href="/lzv-api/tools">Werkzeuge</a>.
 </p>
 <p>Konkret kann ValiFY für die Formatidentifikation und -validierung
 	von PDF-Dateien, die Erstellung von PDF/A-Dateien sowie der
 	Metadatenbearbeitung von PDF-Dateien genutzt werden.</p>
 <p>
-	Dieser Service richtet sich ausschließlich an Kooperationspartner von <a
-		data-linktype="external" target="_blank" href="https://www.lzv.nrw">LZV.nrw</a>,
-	um ihnen einen Mehrwert gegenüber der separaten Nutzung der jeweiligen
-	Tools zu bieten. Zum Einsatz kommen die im Folgenden beschriebenen
+	Dieser Service richtet sich an die Kooperationspartner von <a
+		data-linktype="external" target="_blank" href="https://www.lzv.nrw">LZV.nrw</a>.
+	Der zentrale Zugang zu den verschiedenen Tools bietet einen Mehrwert
+	gegenüber deren separater Nutzung. Zum Einsatz kommen die folgenden
 	Werkzeuge.
 </p>
 
 <h3>PDFbox - Open Access-Tool</h3>
 <ul>
-	<li>zur Identifizierung der PDF-Datei - Versionsbestimmung
+	<li>zur Analyse der PDF-Datei - Versionsbestimmung, Auslesen
+		vorhandener Metadaten
 		<ul>
-			<li>In ValiFY ist zur ausgelesenen Versionsangabe jeweils die
-				Verlinkung zum Eintrag der identifizierten PDF-Version in der <a
+			<li>In ValiFY ist zusätzlich zur Versionsangabe jeweils eine
+				Verlinkung zum entsprechenden Eintrag in der <a
 				data-linktype="external" target="_blank"
 				href="https://www.nationalarchives.gov.uk/pronom/">PRONOM-Datenbank</a>
-				eingefügt, um direkt zu ermöglichen, sich weitergehend zu
-				informieren.
+				eingefügt, um sich direkt weitergehend informieren zu können.
 			</li>
+			<li>Die durch PDFBox auslesbaren Metadaten werden ausgegeben.</li>
 		</ul>
 	</li>
 	<li>zur Bearbeitung von Metadaten
 		<ul>
-			<li>Die Inhalte sechs verschiedener Metadatenfelder der jeweils
-				ausgewählten Datei können mit neuen Werten überschrieben oder
-				Angaben in diesen Feldern hinzugefügt werden, sofern diese Felder
-				noch leer sind.</li>
+			<li>Die Inhalte von sechs Metadatenfeldern der jeweils
+				ausgewählten Datei können mit neuen Werten überschrieben werden.
+				Sind die Felder leer, können neue Angaben hinzugefügt werden.</li>
 		</ul>
 	</li>
 </ul>
 <h3>veraPDF - Open Access-Tool</h3>
 <ul>
-	<li>zur Identifizierung der PDF-Datei - Versionsbestimmung
+	<li>zur Analyse der PDF-Datei - Versionsbestimmung, Auslesen
+		vorhandener Metadaten
 		<ul>
-			<li>In ValiFY ist zur ausgelesenen Versionsangabe jeweils die
-				Verlinkung zum Eintrag der identifizierten PDF-Version in der <a
+			<li>In ValiFY ist zusätzlich zur Versionsangabe jeweils eine
+				Verlinkung zum entsprechenden Eintrag in der <a
 				data-linktype="external" target="_blank"
 				href="https://www.nationalarchives.gov.uk/pronom/">PRONOM-Datenbank</a>
-				eingefügt, um direkt zu ermöglichen, sich weitergehend zu
-				informieren.
+				eingefügt, um sich direkt weitergehend informieren zu können.
 			</li>
+			<li>Die durch veraPDF auslesbaren Metadaten werden ausgegeben.</li>
 		</ul>
 	</li>
 	<li>zur Validierung der PDF-Datei - Bestimmung des PDF/A-Standards
 		und seiner Konformitätsstufe
 		<ul>
-			<li>Wurde ein PDF/A-Standard identifiziert, wird in ValiFY
+			<li>Wurde ein PDF/A-Standard identifiziert, ist in ValiFY
 				jeweils die Verlinkung zum Eintrag des entsprechenden
 				PDF/A-Standards in der <a data-linktype="external" target="_blank"
 				href="https://www.nationalarchives.gov.uk/pronom/">PRONOM-Datenbank</a>
 				sowie dessen Beschreibung bei <a data-linktype="external"
 				target="_blank" href="https://kost-ceco.ch/cms/willkommen.html">KOST</a>
-				eingefügt, um zu ermöglichen, sich direkt weitergehend zu
-				informieren.
+				eingefügt, um sich direkt weitergehend informieren zu können.
 			</li>
 		</ul>
 	</li>
 </ul>
 <h3>pdfaPilot - lizensiertes Tool</h3>
 <ul>
-	<li>zur Identifizierung der PDF-Datei - Versionsbestimmung
+	<li>zur Analyse der PDF-Datei - Versionsbestimmung, Auslesen
+		vorhandener Metadaten
 		<ul>
-			<li>In ValiFY ist zur ausgelesenen Versionsangabe jeweils die
-				Verlinkung zum Eintrag der identifizierten PDF-Version in der <a
+			<li>In ValiFY ist zusätzlich zur Versionsangabe jeweils eine
+				Verlinkung zum entsprechenden Eintrag in der <a
 				data-linktype="external" target="_blank"
 				href="https://www.nationalarchives.gov.uk/pronom/">PRONOM-Datenbank</a>
-				eingefügt, um direkt zu ermöglichen, sich weitergehend zu
-				informieren.
+				eingefügt, um sich direkt weitergehend informieren zu können.
 			</li>
+			<li>Die durch pdfaPilot auslesbaren Metadaten werden ausgegeben.</li>
 		</ul>
 	</li>
 	<li>zur Valdierung der PDF-Datei - Bestimmung des PDF/A-Standards
 		und seiner Konformitätsstufe
 		<ul>
-			<li>Wurde ein PDF/A-Standard identifiziert, wird in ValiFY
+			<li>Wurde ein PDF/A-Standard identifiziert, ist in ValiFY
 				jeweils die Verlinkung zum Eintrag des entsprechenden
 				PDF/A-Standards in der <a data-linktype="external" target="_blank"
 				href="https://www.nationalarchives.gov.uk/pronom/">PRONOM-Datenbank</a>
 				sowie dessen Beschreibung bei <a data-linktype="external"
 				target="_blank" href="https://kost-ceco.ch/cms/willkommen.html">KOST</a>
-				eingefügt, um zu ermöglichen, sich direkt weitergehend zu
-				informieren.
+				eingefügt, um sich direkt weitergehend informieren zu können.
 			</li>
 		</ul>
 	</li>
@@ -119,12 +119,12 @@
 <p>PDF/A stellt ein spezifisches PDF-Dateiformat für die
 	Langzeitarchivierung bzw. -verfügbarkeit digitaler Dokumente dar. Dabei
 	wird nach verschiedenen Standards unterschieden, aktuell PDF/A-1,
-	PDF/A-2, PDF/A-3 und PDF/A-4. Jeder Standard ist geeignet für
-	spezifische Anwendungsfälle bzw. Dokumentenarten. Je nach Standard
-	stehen verschiedene Ausprägungen, sogenannte Konformitätsstufen oder
-	Level zur Verfügung, die die jeweiligen Eigenschaften weiter
-	untergliedern. Dezidierte Informationen dazu finden sich auf den im
-	Folgenden aufgeführten Seiten:</p>
+	PDF/A-2, PDF/A-3 und PDF/A-4. Jeder Standard ist für spezifische
+	Anwendungsfälle bzw. Dokumentenarten geeignet. Je nach Standard stehen
+	verschiedene Ausprägungen, sogenannte Konformitätsstufen oder Level zur
+	Verfügung, die die jeweiligen Eigenschaften weiter untergliedern.
+	Dezidierte Informationen dazu finden sich auf den im Folgenden
+	aufgeführten Seiten:</p>
 <ul>
 	<li><a data-linktype="external" target="_blank"
 		href="https://de.wikipedia.org/wiki/PDF/A" target="_blank">https://de.wikipedia.org/wiki/PDF/A</a></li>
