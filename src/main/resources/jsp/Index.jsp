@@ -3,7 +3,7 @@
 
 <%=new String(de.nrw.hbz.lzv.services.template.HtmlTemplate.getHtmlHead())%>
 
-<div class=leadImage>
+<div class="lead-image">
 	<h1>
 		<span style="color: #192d46; font-variant: small-caps;">Vali</span><span
 			style="color: #2ba1d5; font-variant: small-caps;">FY</span> <br>Ein

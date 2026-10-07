@@ -262,7 +262,7 @@ img.menu {
 	clear: both;
 }
 
-.leadImage {
+.lead-image {
 	align-items: center;
 	display: flex;
 	flex-direction: row;
@@ -271,11 +271,11 @@ img.menu {
 	margin-top: 30px
 }
 
-.leadimage>h1 {
+.lead-image>h1 {
 	width: 50%;
 }
 
-.leadimage>img {
+.lead-image>img {
 	width: 20%;
 	object-fit: contain;
 }
@@ -306,7 +306,7 @@ img.menu {
 }
 
 li a[data-linktype="external"]::after {
-	font-family: "FontAwesome";
+	font-family: FontAwesome;
 	font-size: 15px;
 	font-weight: 100;
 	margin-left: 5px;
@@ -315,7 +315,7 @@ li a[data-linktype="external"]::after {
 }
 
 li a[data-linktype="internal"]::after {
-	font-family: "FontAwesome";
+	font-family: FontAwesome;
 	font-size: 15px;
 	font-weight: 100;
 	margin-left: 5px;
@@ -324,7 +324,7 @@ li a[data-linktype="internal"]::after {
 }
 
 p a[data-linktype="external"]::after {
-	font-family: "FontAwesome";
+	font-family: FontAwesome;
 	font-size: 15px;
 	font-weight: 100;
 	margin-left: 5px;
@@ -333,7 +333,7 @@ p a[data-linktype="external"]::after {
 }
 
 p a[data-linktype="internal"]::after {
-	font-family: "FontAwesome";
+	font-family: FontAwesome;
 	font-size: 15px;
 	font-weight: 100;
 	margin-left: 5px;
@@ -349,7 +349,7 @@ ul {
 	list-style: none;
 }
 
-.main ul li:before {
+.main ul li::before {
 	content: "\25A0";
 	color: #2ba1d5;
 	font-size: 14px;
@@ -360,7 +360,7 @@ ul {
 	vertical-align: 4px;
 }
 
-.main ul li ul li:before {
+.main ul li ul li::before {
 	content: "\25CF";
 	color: #2ba1d5;
 	font-size: 14px;
