@@ -129,20 +129,21 @@
 	<li><a data-linktype="external" target="_blank"
 		href="https://de.wikipedia.org/wiki/PDF/A" target="_blank">https://de.wikipedia.org/wiki/PDF/A</a></li>
 	<li><a data-linktype="external" target="_blank"
-		href="https://www.adobe.com/de/acrobat/resources/document-files/pdf-types/pdf-a.html">https://www.adobe.com/de/acrobat/resources/document-files/pdf-types/pdf-a.html</a></li>
+		href="https://www.adobe.com/de/acrobat/resources/document-files/pdf-types/pdf-a">https://www.adobe.com/de/acrobat/resources/document-files/pdf-types/pdf-a</a></li>
 	<li><a data-linktype="external" target="_blank"
 		href="https://blog.visual-paradigm.com/de/what-are-the-different-conformance-levels-of-pdf-a/">https://blog.visual-paradigm.com/de/what-are-the-different-conformance-levels-of-pdf-a/</a></li>
 	<li><a data-linktype="external" target="_blank"
-		href="https://kost-ceco.ch/cms/pdf-a-1.html">https://kost-ceco.ch/cms/pdf-a-1.html</a></li>
+		href="https://kost-ceco.ch/cms/pdf-a-1">https://kost-ceco.ch/cms/pdf-a-1</a></li>
 	<li><a data-linktype="external" target="_blank"
-		href="https://kost-ceco.ch/cms/pdf-a-2.html">https://kost-ceco.ch/cms/pdf-a-2.html</a></li>
+		href="https://kost-ceco.ch/cms/pdf-a-2">https://kost-ceco.ch/cms/pdf-a-2</a></li>
 	<li><a data-linktype="external" target="_blank"
-		href="https://kost-ceco.ch/cms/pdf-a-3.html">https://kost-ceco.ch/cms/pdf-a-3.html</a></li>
+		href="https://kost-ceco.ch/cms/pdf-a-3">https://kost-ceco.ch/cms/pdf-a-3</a></li>
+	<li><a data-linktype="external" target="_blank"
+		href="https://kost-ceco.ch/cms/kriterienkatalog">https://kost-ceco.ch/cms/kriterienkatalog</a></li>
 	<li><a data-linktype="external" target="_blank"
 		href="https://pdfa.org/pdfa-faq/">https://pdfa.org/pdfa-faq/</a></li>
 	<li><a data-linktype="external" target="_blank"
 		href="https://pdfa.org/archival-pdf/">https://pdfa.org/archival-pdf/</a></li>
 </ul>
-
 
 <%=new String(de.nrw.hbz.lzv.services.template.HtmlTemplate.getHtmlFoot())%>

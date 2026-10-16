@@ -77,6 +77,11 @@ h1 {
 	line-height: 1.1;
 }
 
+h1[class=documentFirstHeading] {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
 h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 31px;
@@ -100,13 +105,24 @@ body {
 	line-height: 1.4;
 }
 
+header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	max-width: 1000px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 120px;
+}
+
 a img {
 	height: 20px;
 }
 
 div.head {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	position: sticky;
 	top: 0;
 	z-index: 2;
@@ -122,6 +138,28 @@ div.head {
 	font-weight: 600;
 	color: #192d46;
 	align-items: center;
+}
+
+div.contentHeading {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 1.1;
+	margin-top: 30px;
+}
+
+div.selectedFile {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 1.1;
+	text-align: center;
+}
+
+div.documentDescription {
+	color: #192d46;
+	font-weight: bold;
+	font-size: 19px;
 }
 
 div.navigation {
@@ -157,12 +195,6 @@ div.submenu {
 
 div ul {
 	line-height: 1.5em;
-}
-
-div label[for="pdffile"], div label[for="file"] {
-	display: block;
-	font-weight: bold;
-	margin-bottom: 10px;
 }
 
 .menu a {
@@ -224,7 +256,12 @@ div label[for="pdffile"], div label[for="file"] {
 }
 
 select[name="flavour"] {
-	margin-right: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	background-color: #fff;
+	color: #192d46;
+	border-style: solid;
+	border-width: thin;
 }
 
 span.arrow {
@@ -242,7 +279,7 @@ img.menu {
 
 .main {
 	width: 100%;
-	min-height: 85%;
+	min-height: 82vh;
 	background-color: #fff;
 	display: block;
 	padding: 55px;
@@ -323,7 +360,7 @@ li a[data-linktype="internal"]::after {
 	content: "\f0c1";
 }
 
-p a[data-linktype="external"]::after {
+a[data-linktype="external"]::after {
 	font-family: FontAwesome;
 	font-size: 15px;
 	font-weight: 100;
@@ -332,7 +369,7 @@ p a[data-linktype="external"]::after {
 	content: "\f08e";
 }
 
-p a[data-linktype="internal"]::after {
+a[data-linktype="internal"]::after {
 	font-family: FontAwesome;
 	font-size: 15px;
 	font-weight: 100;
@@ -342,7 +379,7 @@ p a[data-linktype="internal"]::after {
 }
 
 i {
-	margin-right: 0.25em;
+	margin-right: 0.5em;
 }
 
 ul {
@@ -377,9 +414,99 @@ li i {
 }
 
 .success {
-	color: green;
+	color: darkgreen;
+	font-weight: bold;
 }
 
 .error {
 	color: red;
+	font-weight: bold;
+}
+
+.upload-label {
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	color: #192d46;
+	cursor: text;
+}
+
+.upload-section {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 0;
+	margin-bottom: 20px;
+}
+
+input[type="file"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.upload-button, .selected-filename, .submit-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 42px;
+	margin: 0;
+	padding: 8px 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
+	line-height: 1.4;
+	vertical-align: top;
+}
+
+.upload-button, .submit-button {
+	background-color: #2ba1d5;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	font-weight: 400;
+	cursor: pointer;
+	text-align: center;
+	transition: background-color 0.2s ease;
+	margin-left: 10px;
+}
+
+.upload-button:hover, .submit-button:hover {
+	background-color: #192d46;
+}
+
+.upload-button:focus-visible, .submit-button:focus-visible {
+	outline: 3px solid #192d46;
+	outline-offset: 3px;
+}
+
+.selected-filename {
+	background-color: #f3f3f3;
+	color: #192d46;
+	font-weight: 400;
+	overflow-wrap: anywhere;
+}
+
+input[type="file"]:focus-visible+.selected-filename {
+	outline: 2px solid #192d46;
+	outline-offset: -2px;
+}
+
+.flavour-section {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: bold;
+}
+
+.flavour-section label {
+	cursor: text;
+	font-size: 25px;
 }
