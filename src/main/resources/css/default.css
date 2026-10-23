@@ -70,7 +70,7 @@
 	box-sizing: border-box;
 }
 
-p[class=moreMarginTop] {
+p[class="moreMarginTop"] {
 	margin-top: 40px;
 }
 
@@ -527,7 +527,7 @@ td:nth-child(3), th:nth-child(3) {
 	padding-left: 25px;
 }
 
-td[class=label] {
+td[class="label"] {
 	font-size: 25px;
 	font-weight: 600;
 	padding-right: 20px;
