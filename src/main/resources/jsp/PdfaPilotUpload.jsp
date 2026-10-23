@@ -14,17 +14,10 @@
 <div class="pdfapilot-form version">
 	<form action="/lzv-api/validate/pdfapilot" method="post"
 		enctype="multipart/form-data">
-
-		<div class="upload-section">
-			<label class="upload-label"> PDF:</label> <label for="pdffile"
-				class="upload-button">Datei auswählen</label> <input
-				class="file-upload" type="file" id="pdffile" name="file"
-				accept=".pdf,application/pdf" /> <span id="selected-filename"
-				class="selected-filename">Keine Datei ausgewählt</span>
-
-			<button type="submit" class="submit-button">Abschicken</button>
+		<div style="display: flex;">
+			<%=de.nrw.hbz.lzv.services.template.HtmlTemplate.getPdfUploadSection()%>
+			<button type="submit" class="submit-button">abschicken</button>
 		</div>
-
 	</form>
 </div>
 

@@ -21,13 +21,7 @@
 <div class="pdfapilot-form validation">
 	<form action="/lzv-api/convert/pdfapilot" method="post"
 		enctype="multipart/form-data">
-		<div class="upload-section">
-			<label class="upload-label">PDF: </label> <label for="pdffile"
-				class="upload-button">Datei auswählen</label> <input
-				class="file-upload" type="file" id="pdffile" name="file"
-				accept=".pdf,application/pdf" /> <span id="selected-filename"
-				class="selected-filename">Keine Datei ausgewählt</span> <br />
-		</div>
+		<%=de.nrw.hbz.lzv.services.template.HtmlTemplate.getPdfUploadSection()%>
 		<div class="flavour-section">
 			<label for="flavour">Standard und Konformitätsstufe:</label> <select
 				name="flavour" id="flavour">
@@ -43,7 +37,7 @@
 				<option value="3b">3b</option>
 				<option value="auto">Automatisch (erster erfolgreicher)</option>
 			</select>
-			<button type="submit" class="submit-button">Abschicken</button>
+			<button type="submit" class="submit-button">abschicken</button>
 		</div>
 
 		</p>
@@ -56,7 +50,7 @@
 
 	fileInput.addEventListener('change', function() {
 		filename.textContent = this.files.length ? this.files[0].name
-				: 'Keine Datei ausgewählt';
+				: 'keine Datei ausgewählt';
 	});
 </script>
 

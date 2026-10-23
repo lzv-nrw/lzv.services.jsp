@@ -97,8 +97,7 @@ public class HtmlTemplate {
 		defMenu.append("<div class='menu'>Bearbeiten");
 		defMenu.append("<i class='fa-solid fa-chevron-down'></i>");
 		defMenu.append("<div class='submenu'>" + "<ul>");
-		// defMenu.append("<li><a href='/lzv-jsp/editMd/form'>PDF-Metadaten
-		// ändern</a></li>");
+		defMenu.append("<li><a href='/lzv-jsp/pdfbox/editMd'>PDF-Metadaten ändern</a></li>");
 		defMenu.append("<li><a href='/lzv-jsp/pdfapilot/createpdfa'>PDF/A erzeugen</a></li>");
 		defMenu.append("</ul></div></div>");
 		defMenu.append("</div>");
@@ -120,9 +119,26 @@ public class HtmlTemplate {
 		defMenu.append("</div></div></div>");
 
 		// Logo lzv.nrw
-		defMenu.append("<a id='portal-logo-lzv' title='lzv.nrw' href='https://www.lzv.nrw'>");
+		defMenu.append("<a id='portal-logo-lzv' title='lzv.nrw' href='www.lzv.nrw'>");
 		defMenu.append("<img src='/lzv-jsp/images/lzv-nrw-logo.png' alt='lzv.nrw' title='lzv.nrw'></a>");
 
 		return defMenu.toString();
+	}
+
+	/**
+	 * @return a HTML-Document PDF upload section
+	 */
+	public static String getPdfUploadSection() {
+		StringBuffer pdfUploadSection = new StringBuffer();
+
+		pdfUploadSection.append("<div class='upload-section'>");
+		pdfUploadSection.append("<label class='upload-label'>PDF: </label>");
+		pdfUploadSection.append("<label for='pdffile' class='upload-button'>Datei auswählen</label>");
+		pdfUploadSection.append(
+				"<input class='file-upload' type='file' id='pdffile' name='file' accept='.pdf,application/pdf' />");
+		pdfUploadSection.append("<span id='selected-filename' class='selected-filename'>keine Datei ausgewählt</span>");
+		pdfUploadSection.append("</div>");
+
+		return pdfUploadSection.toString();
 	}
 }

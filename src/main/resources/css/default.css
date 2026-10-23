@@ -70,6 +70,10 @@
 	box-sizing: border-box;
 }
 
+p[class="moreMarginTop"] {
+	margin-top: 40px;
+}
+
 h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 50px;
@@ -264,6 +268,10 @@ select[name="flavour"] {
 	border-width: thin;
 }
 
+input[name="value"] {
+	margin-right: 15px;
+}
+
 span.arrow {
 	font-size: 20px;
 }
@@ -437,7 +445,7 @@ li i {
 	align-items: baseline;
 	flex-wrap: wrap;
 	gap: 0;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 input[type="file"] {
@@ -509,4 +517,32 @@ input[type="file"]:focus-visible+.selected-filename {
 .flavour-section label {
 	cursor: text;
 	font-size: 25px;
+}
+
+table {
+	margin-bottom: 30px;
+}
+
+td:nth-child(3), th:nth-child(3) {
+	padding-left: 25px;
+}
+
+td[class="label"] {
+	font-size: 25px;
+	font-weight: 600;
+	padding-right: 20px;
+}
+
+td input {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
+	color: #192d46;
+}
+
+td input[readonly] {
+	cursor: not-allowed;
+}
+
+table+.submit-button {
+	margin-left: 0;
 }
