@@ -21,7 +21,7 @@
 	ValiFY ist ein niedrigschwelliges Angebot für die Arbeit mit
 	PDF-Dateien im Kontext der Datenerhaltung und Langzeitverfügbarkeit und
 	bündelt dafür unterschiedliche <a data-linktype="internal"
-		href="/lzv-api/tools">Werkzeuge</a>.
+		href="/lzv-jsp/tools">Werkzeuge</a>.
 </p>
 <p>Konkret kann ValiFY für die Formatidentifikation und -validierung
 	von PDF-Dateien, die Erstellung von PDF/A-Dateien sowie der

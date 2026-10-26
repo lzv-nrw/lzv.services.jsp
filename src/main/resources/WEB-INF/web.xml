@@ -91,4 +91,12 @@
     <servlet-name>pdfboxEditFileUpload</servlet-name>
     <url-pattern>/pdfbox/editMd</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>tools</servlet-name>
+    <jsp-file>/jsp/Tools.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>tools</servlet-name>
+    <url-pattern>/tools</url-pattern>
+  </servlet-mapping>
 </web-app>
