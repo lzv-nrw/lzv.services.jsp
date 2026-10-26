@@ -1,3 +1,6 @@
+/**
+* Loads the available tools from the API and displays their informations.
+*/
 document.addEventListener("DOMContentLoaded", function() {
 	const container = document.getElementById("tools-container");
 

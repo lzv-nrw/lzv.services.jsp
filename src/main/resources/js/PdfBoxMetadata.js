@@ -1,3 +1,7 @@
+/**
+* Automatically extracts metadata from a selected PDF file
+* and populates the corresponding form fields.
+*/
 document.addEventListener('DOMContentLoaded', function() {
 	const fileInput = document.getElementById('pdffile');
 	const filename = document.getElementById('selected-filename');
