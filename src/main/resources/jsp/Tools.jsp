@@ -7,7 +7,8 @@
 <header>
 	<h1 class="documentFirstHeading">Verwendete Werkzeuge</h1>
 	<div class="documentDescription description">Übersicht der
-		eingesetzten PDF-Werkzeuge und ihrer Versionen.</div>
+		eingesetzten PDF-Werkzeuge mit Angaben zu ihren Versionen und weiteren
+		Informationen.</div>
 </header>
 
 <div id="tools-container">
