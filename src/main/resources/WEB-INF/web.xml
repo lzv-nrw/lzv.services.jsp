@@ -99,4 +99,12 @@
     <servlet-name>tools</servlet-name>
     <url-pattern>/tools</url-pattern>
   </servlet-mapping>
+    <servlet>
+    <servlet-name>lzvnrw</servlet-name>
+    <jsp-file>/jsp/Lzvnrw.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>lzvnrw</servlet-name>
+    <url-pattern>/lzvnrw</url-pattern>
+  </servlet-mapping>
 </web-app>
