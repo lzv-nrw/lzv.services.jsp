@@ -99,12 +99,28 @@
     <servlet-name>tools</servlet-name>
     <url-pattern>/tools</url-pattern>
   </servlet-mapping>
-    <servlet>
+  <servlet>
     <servlet-name>lzvnrw</servlet-name>
     <jsp-file>/jsp/Lzvnrw.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
     <servlet-name>lzvnrw</servlet-name>
     <url-pattern>/lzvnrw</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>sitemap</servlet-name>
+    <jsp-file>/jsp/Sitemap.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sitemap</servlet-name>
+    <url-pattern>/sitemap</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>accessibility-statement</servlet-name>
+    <jsp-file>/jsp/AccessibilityStatement.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>accessibility-statement</servlet-name>
+    <url-pattern>/erklaerung-zur-barrierefreiheit</url-pattern>
   </servlet-mapping>
 </web-app>
