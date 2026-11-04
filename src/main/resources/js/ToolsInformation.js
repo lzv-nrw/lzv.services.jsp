@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
 					websiteLink.target = "_blank";
 					websiteLink.rel = "noopener noreferrer";
 					websiteLink.setAttribute("data-linktype", "external");
+					websiteLink.setAttribute("title", tool.name + " - Website");
 
 					website.appendChild(websiteLink);
 					list.appendChild(website);
@@ -59,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
 					githubLink.target = "_blank";
 					githubLink.rel = "noopener noreferrer";
 					githubLink.setAttribute("data-linktype", "external");
+					githubLink.setAttribute("title", tool.name + " - GitHub");
 
 					github.appendChild(githubLink);
 					list.appendChild(github);

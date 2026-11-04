@@ -46,8 +46,38 @@ public class HtmlTemplate {
 	 */
 	public static String getHtmlFoot() {
 		StringBuffer footSb = new StringBuffer();
-		footSb.append("</div>\n<footer class=\"footer\">");
-		footSb.append("<a class=\"fanker\" href=\"/lzv-jsp/about\">Über</a></footer>");
+		footSb.append("</div> <footer id=\"footer-wrapper\">");
+		footSb.append("<div class=\"container\" id=\"footer\">");
+		footSb.append("<div class=\"logos row\">");
+		footSb.append("<div>");
+		footSb.append(
+				"<p><a data-linktype=\"external\" data-val=\"https://www.lzv.nrw\" href=\"https://www.lzv.nrw\" rel=\"noopener\" target=\"_blank\" title=\"Landesinitiative Langzeitverfügbarkeit - LZV.nrw\">");
+		footSb.append(
+				"<img alt=\"Landesinitiative Langzeitverfügbarkeit - LZV.nrw\" src=\"/lzv-jsp/images/lzv-nrw-logo-claim.png\" title=\"Landesinitiative Langzeitverfügbarkeit - LZV.nrw\"></a></p>");
+		footSb.append("</div>");
+		footSb.append("<div>");
+		footSb.append(
+				"<p><a data-linktype=\"external\" data-val=\"https://www.hbz-nrw.de/de\" href=\"https://www.hbz-nrw.de/de\" rel=\"noopener\" target=\"_blank\" title=\"Hochschulbibliothekszentrum des Landes NRW\">");
+		footSb.append(
+				"<img alt=\"Logo hbz\" src=\"/lzv-jsp/images/hbz-logo.png\" title=\"Hochschulbibliothekszentrum des Landes NRW\"></a></p>");
+		footSb.append("</div>");
+		footSb.append("</div>");
+		footSb.append("<div class=\"site-actions row\">");
+		footSb.append("<div><ul class=\"actions-site_actions\">");
+		footSb.append(
+				"<li class=\"portletItem\"><a href=\"/lzv-jsp/sitemap\" title=\"Übersicht\"> <span>Übersicht</span></a></li>");
+		footSb.append(
+				"<li class=\"portletItem\"><a href=\"/lzv-jsp/erklaerung-zur-barrierefreiheit\" title=\"Barrierefreiheit\"> <span>Barrierefreiheit</span></a></li>");
+		footSb.append(
+				"<li class=\"portletItem\"><a href=\"https://www.lzv.nrw/ueber-uns/team\" title=\"LZV-Service-Team\"> <span>Kontakt</span></a></li>");
+		footSb.append(
+				"<li class=\"portletItem\"><a href=\"http://www.hbz-nrw.de/de/impressum\" title=\"Impressum\"> <span>Impressum</span></a></li>");
+		footSb.append(
+				"<li class=\"portletItem\"><a href=\"http://www.hbz-nrw.de/de/datenschutz\" title=\"Datenschutz\"> <span>Datenschutz</span></a></li>");
+		footSb.append(
+				"<li class=\"portletItem\"><a href=\"https://status.hbz-nrw.net/\" title=\"Betriebsstatus\"> <span>Betriebsstatus</span></a></li>");
+		footSb.append("</ul></div></div></div>");
+		footSb.append("</footer>");
 		footSb.append("</body>\n</html>");
 
 		return footSb.toString();
@@ -95,29 +125,29 @@ public class HtmlTemplate {
 
 		// Edit
 		defMenu.append("<div class='dropdown'>");
-		defMenu.append("<div class='menu'>Bearbeiten");
-		defMenu.append("<i class='fa-solid fa-chevron-down'></i>");
+		defMenu.append("<div class='menu'><button type=\"button\" class=\"menu-trigger\">Bearbeiten");
+		defMenu.append("<i class='fa-solid fa-chevron-down'></i></button>");
 		defMenu.append("<div class='submenu'>" + "<ul>");
-		defMenu.append("<li><a href='/lzv-jsp/pdfbox/editMd'>PDF-Metadaten ändern</a></li>");
-		defMenu.append("<li><a href='/lzv-jsp/pdfapilot/createpdfa'>PDF/A erzeugen</a></li>");
+		defMenu.append("<li><a href='/lzv-jsp/pdfbox/editMd'>PDF-Metadatenänderung</a></li>");
+		defMenu.append("<li><a href='/lzv-jsp/pdfapilot/createpdfa'>PDF/A-Erzeugung</a></li>");
 		defMenu.append("</ul></div></div>");
 		defMenu.append("</div>");
 
 		// Analysis
 		defMenu.append("<div class='dropdown'>");
-		defMenu.append("<div class='menu'>Analyse");
-		defMenu.append("<i class='fa-solid fa-chevron-down'></i>");
+		defMenu.append("<div class='menu'><button type=\"button\" class=\"menu-trigger\">Analyse");
+		defMenu.append("<i class='fa-solid fa-chevron-down'></i></button>");
 		defMenu.append("<div class='submenu'>" + "<ul>");
-		defMenu.append("<li><a href='/lzv-jsp/pdfbox/upload'>PDF-Validierung (PDFbox)</a></li>");
-		defMenu.append("<li><a href='/lzv-jsp/verapdf/upload'>PDF/A-Validierung (veraPDF)</a></li>");
-		defMenu.append("<li><a href='/lzv-jsp/pdfapilot/upload'>PDF- und PDF/A-Validierung (pdfaPilot)</a></li>");
+		defMenu.append("<li><a href='/lzv-jsp/pdfbox/upload'>PDF-Analyse (PDFbox)</a></li>");
+		defMenu.append("<li><a href='/lzv-jsp/verapdf/upload'>PDF-Analyse und -Validierung (veraPDF)</a></li>");
+		defMenu.append("<li><a href='/lzv-jsp/pdfapilot/upload'>PDF-Analyse und -Validierung (pdfaPilot)</a></li>");
 		defMenu.append("</ul></div></div>");
 		defMenu.append("</div>");
 
 		// More informationen
 		defMenu.append("<div class='dropdown'>");
-		defMenu.append("<div class='menu'>weitere Infos");
-		defMenu.append("<i class='fa-solid fa-chevron-down'></i>");
+		defMenu.append("<div class='menu'><button type=\"button\" class=\"menu-trigger\">weitere Infos");
+		defMenu.append("<i class='fa-solid fa-chevron-down'></i></button>");
 		defMenu.append("<div class='submenu'>" + "<ul>");
 		defMenu.append("<li><a href='/lzv-jsp/tools'>Werkzeuge</a></li>");
 		defMenu.append("<li><a href='/lzv-jsp/lzvnrw'>LZV.nrw</a></li>");
@@ -127,8 +157,10 @@ public class HtmlTemplate {
 		defMenu.append("</div>");
 
 		// Logo lzv.nrw
-		defMenu.append("<a id='portal-logo-lzv' title='lzv.nrw' href='www.lzv.nrw'>");
-		defMenu.append("<img src='/lzv-jsp/images/lzv-nrw-logo.png' alt='lzv.nrw' title='lzv.nrw'></a>");
+		defMenu.append(
+				"<a id='portal-logo-lzv' title='Landesinitiative Langzeitverfügbarkeit - LZV.nrw' href='https://www.lzv.nrw/' target='_blank'>");
+		defMenu.append(
+				"<img src='/lzv-jsp/images/lzv-nrw-logo.png' alt='Landesinitiative Langzeitverfügbarkeit - LZV.nrw' title='Landesinitiative Langzeitverfügbarkeit - LZV.nrw'></a>");
 
 		return defMenu.toString();
 	}
@@ -140,10 +172,11 @@ public class HtmlTemplate {
 		StringBuffer pdfUploadSection = new StringBuffer();
 
 		pdfUploadSection.append("<div class='upload-section'>");
-		pdfUploadSection.append("<label class='upload-label'>PDF: </label>");
-		pdfUploadSection.append("<label for='pdffile' class='upload-button'>Datei auswählen</label>");
+		pdfUploadSection.append("<label class='upload-label'>PDF:</label>");
 		pdfUploadSection.append(
-				"<input class='file-upload' type='file' id='pdffile' name='file' accept='.pdf,application/pdf' />");
+				"<label for='pdffile' class='upload-button' title='Test für Screenreader'>Datei auswählen</label>");
+		pdfUploadSection.append(
+				"<input class='file-upload' type='file' id='pdffile' name='file' accept='.pdf,application/pdf' required/>");
 		pdfUploadSection.append("<span id='selected-filename' class='selected-filename'>keine Datei ausgewählt</span>");
 		pdfUploadSection.append("</div>");
 

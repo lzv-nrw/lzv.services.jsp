@@ -14,7 +14,7 @@
 <div class="contentHeading">LZV-Service-Wiki</div>
 <ul>
 	<li>URL: <a data-linktype="external" target="_blank"
-		href="https://service-wiki.hbz-nrw.de/spaces/LLZV/overview">https://service-wiki.hbz-nrw.de/spaces/LLZV/overview</a>
+		href="https://service-wiki.hbz-nrw.de/spaces/LLZV/overview" title="LZV-Service-Wiki">https://service-wiki.hbz-nrw.de/spaces/LLZV/overview</a>
 	</li>
 	<li>enthält praxisnahe Informationen zur digitalen
 		Langzeitverfügbarkeit sowie zu deren Umsetzung mit dem LZV-System
@@ -26,10 +26,10 @@
 <div class="contentHeading">Dateiformattafel</div>
 <ul>
 	<li>URL: <a data-linktype="external" target="_blank"
-		href="https://www.lzv.nrw/dateiformate">https://www.lzv.nrw/dateiformate/</a>
+		href="https://www.lzv.nrw/dateiformate" title="interaktive Tafel gängiger Dateiformate für die LZV">https://www.lzv.nrw/dateiformate/</a>
 	</li>
 	<li>enthält Hinweise zur Verbreitung einzelner Dateiformate und
-		deren Langzeitstabilität als Hilfestellung für die Bewertung ihrer
+		deren Langzeitstabilität zur Bewertung ihrer
 		Verwendung im LZV-Kontext</li>
 	<li>richtet sich an Datenproduzent*innen und die
 		LZV-Umsetzungsebene der bestandshaltenden Institutionen</li>
@@ -38,7 +38,7 @@
 <div class="contentHeading">LZV.nrw-GitHub</div>
 <ul>
 	<li>URL: <a data-linktype="external" target="_blank"
-		href="https://github.com/lzv-nrw">https://github.com/lzv-nrw</a>
+		href="https://github.com/lzv-nrw" title="LZV.nrw-GitHub">https://github.com/lzv-nrw</a>
 	</li>
 	<li>enthält LZV-spezifische Software-Entwicklungen zur Nachnutzung
 		und Weiterentwicklung</li>
@@ -49,7 +49,7 @@
 <div class="contentHeading">LZV.nrw-Website</div>
 <ul>
 	<li>URL: <a data-linktype="external" target="_blank"
-		href="https://www.lzv.nrw/">https://www.lzv.nrw/</a>
+		href="https://www.lzv.nrw/" title="Landesinitiative Langzeitverfügbarkeit - LZV.nrw">https://www.lzv.nrw/</a>
 	</li>
 	<li>enthält allgemeine Informationen zur digitalen
 		Langzeitverfügbarkeit sowie zum Serviceangebot der Landesinitiative

@@ -7,14 +7,14 @@
 	<h1 class="documentFirstHeading">PDF/A-Erzeugung mit pdfaPilot</h1>
 	<div class="documentDescription description">
 		PDF-Datei auswählen, die in eine PDF/A-Datei umgewandelt werden soll.<br>
-		Anschließend den gewünschten PDF/A-Standard und die Konformitätsstufe
+		Anschließend den gewünschten PDF/A-Standard mit Konformitätsstufe
 		wählen.
 	</div>
 	<br>
 	<div class="documentDescription description">
 		Weitergehende Informationen zu den jeweiligen Merkmalen der
 		unterschiedlichen PDF/A-Standards sind auf der <a
-			data-linktype="internal" href="/lzv-jsp/about">Startseite</a> zu
+			data-linktype="internal" href="/lzv-jsp/about" title="Startseite">Startseite</a> zu
 		finden.
 	</div>
 </header>
@@ -24,7 +24,7 @@
 		<%=de.nrw.hbz.lzv.services.template.HtmlTemplate.getPdfUploadSection()%>
 		<div class="flavour-section">
 			<label for="flavour">Standard und Konformitätsstufe:</label> <select
-				name="flavour" id="flavour">
+				name="flavour" id="flavour" required>
 				<option value="" disabled selected hidden>Bitte
 					auswählen...</option>
 				<option value="1a">1a</option>
@@ -39,8 +39,6 @@
 			</select>
 			<button type="submit" class="submit-button">abschicken</button>
 		</div>
-
-		</p>
 	</form>
 </div>
 

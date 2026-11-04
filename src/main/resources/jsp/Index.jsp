@@ -21,14 +21,15 @@
 	ValiFY ist ein niedrigschwelliges Angebot für die Arbeit mit
 	PDF-Dateien im Kontext der Datenerhaltung und Langzeitverfügbarkeit und
 	bündelt dafür unterschiedliche <a data-linktype="internal"
-		href="/lzv-jsp/tools">Werkzeuge</a>.
+		href="/lzv-jsp/tools" title="Werkzeuge">Werkzeuge</a>.
 </p>
 <p>Konkret kann ValiFY für die Formatidentifikation und -validierung
 	von PDF-Dateien, die Erstellung von PDF/A-Dateien sowie der
 	Metadatenbearbeitung von PDF-Dateien genutzt werden.</p>
 <p>
-	Dieser Service richtet sich an die Kooperationspartner von <a
-		data-linktype="external" target="_blank" href="https://www.lzv.nrw">LZV.nrw</a>.
+	Dieser Service richtet sich primär an die Kooperationspartner von <a
+		data-linktype="external" target="_blank" href="https://www.lzv.nrw"
+		title="Landesinitiative Langzeitverfügbarkeit - LZV.nrw">LZV.nrw</a>.
 	Der zentrale Zugang zu den verschiedenen Tools bietet einen Mehrwert
 	gegenüber deren separater Nutzung. Zum Einsatz kommen die folgenden
 	Werkzeuge.
@@ -42,8 +43,9 @@
 			<li>In ValiFY ist zusätzlich zur Versionsangabe jeweils eine
 				Verlinkung zum entsprechenden Eintrag in der <a
 				data-linktype="external" target="_blank"
-				href="https://www.nationalarchives.gov.uk/pronom/">PRONOM-Datenbank</a>
-				eingefügt, um sich direkt weitergehend informieren zu können.
+				href="https://www.nationalarchives.gov.uk/pronom/"
+				title="PRONOM-Datenbank">PRONOM-Datenbank</a> eingefügt, um sich
+				direkt weitergehend informieren zu können.
 			</li>
 			<li>Die durch PDFBox auslesbaren Metadaten werden ausgegeben.</li>
 		</ul>
@@ -64,8 +66,9 @@
 			<li>In ValiFY ist zusätzlich zur Versionsangabe jeweils eine
 				Verlinkung zum entsprechenden Eintrag in der <a
 				data-linktype="external" target="_blank"
-				href="https://www.nationalarchives.gov.uk/pronom/">PRONOM-Datenbank</a>
-				eingefügt, um sich direkt weitergehend informieren zu können.
+				href="https://www.nationalarchives.gov.uk/pronom/"
+				title="PRONOM-Datenbank">PRONOM-Datenbank</a> eingefügt, um sich
+				direkt weitergehend informieren zu können.
 			</li>
 			<li>Die durch veraPDF auslesbaren Metadaten werden ausgegeben.</li>
 		</ul>
@@ -76,9 +79,11 @@
 			<li>Wurde ein PDF/A-Standard identifiziert, ist in ValiFY
 				jeweils die Verlinkung zum Eintrag des entsprechenden
 				PDF/A-Standards in der <a data-linktype="external" target="_blank"
-				href="https://www.nationalarchives.gov.uk/pronom/">PRONOM-Datenbank</a>
-				sowie dessen Beschreibung bei <a data-linktype="external"
-				target="_blank" href="https://kost-ceco.ch/cms/willkommen.html">KOST</a>
+				href="https://www.nationalarchives.gov.uk/pronom/"
+				title="PRONOM-Datenbank">PRONOM-Datenbank</a> sowie dessen
+				Beschreibung bei <a data-linktype="external" target="_blank"
+				href="https://kost-ceco.ch/cms/willkommen.html"
+				title="KOST - Koordinationsstelle für die dauerhafte Archivierung elektronischer Unterlagen">KOST</a>
 				eingefügt, um sich direkt weitergehend informieren zu können.
 			</li>
 		</ul>
@@ -92,8 +97,9 @@
 			<li>In ValiFY ist zusätzlich zur Versionsangabe jeweils eine
 				Verlinkung zum entsprechenden Eintrag in der <a
 				data-linktype="external" target="_blank"
-				href="https://www.nationalarchives.gov.uk/pronom/">PRONOM-Datenbank</a>
-				eingefügt, um sich direkt weitergehend informieren zu können.
+				href="https://www.nationalarchives.gov.uk/pronom/"
+				title="PRONOM-Datenbank">PRONOM-Datenbank</a> eingefügt, um sich
+				direkt weitergehend informieren zu können.
 			</li>
 			<li>Die durch pdfaPilot auslesbaren Metadaten werden ausgegeben.</li>
 		</ul>
@@ -104,9 +110,11 @@
 			<li>Wurde ein PDF/A-Standard identifiziert, ist in ValiFY
 				jeweils die Verlinkung zum Eintrag des entsprechenden
 				PDF/A-Standards in der <a data-linktype="external" target="_blank"
-				href="https://www.nationalarchives.gov.uk/pronom/">PRONOM-Datenbank</a>
-				sowie dessen Beschreibung bei <a data-linktype="external"
-				target="_blank" href="https://kost-ceco.ch/cms/willkommen.html">KOST</a>
+				href="https://www.nationalarchives.gov.uk/pronom/"
+				title="PRONOM-Datenbank">PRONOM-Datenbank</a> sowie dessen
+				Beschreibung bei <a data-linktype="external" target="_blank"
+				href="https://kost-ceco.ch/cms/willkommen.html"
+				title="KOST - Koordinationsstelle für die dauerhafte Archivierung elektronischer Unterlagen">KOST</a>
 				eingefügt, um sich direkt weitergehend informieren zu können.
 			</li>
 		</ul>
@@ -127,23 +135,28 @@
 	aufgeführten Seiten:</p>
 <ul>
 	<li><a data-linktype="external" target="_blank"
-		href="https://de.wikipedia.org/wiki/PDF/A" target="_blank">https://de.wikipedia.org/wiki/PDF/A</a></li>
+		href="https://de.wikipedia.org/wiki/PDF/A"
+		title="Wikipedia-Artikel - PDF/A">https://de.wikipedia.org/wiki/PDF/A</a></li>
 	<li><a data-linktype="external" target="_blank"
-		href="https://www.adobe.com/de/acrobat/resources/document-files/pdf-types/pdf-a">https://www.adobe.com/de/acrobat/resources/document-files/pdf-types/pdf-a</a></li>
+		href="https://www.adobe.com/de/acrobat/resources/document-files/pdf-types/pdf-a"
+		title=" Adobe - PDF/A">https://www.adobe.com/de/acrobat/resources/document-files/pdf-types/pdf-a</a></li>
 	<li><a data-linktype="external" target="_blank"
-		href="https://blog.visual-paradigm.com/de/what-are-the-different-conformance-levels-of-pdf-a/">https://blog.visual-paradigm.com/de/what-are-the-different-conformance-levels-of-pdf-a/</a></li>
+		href="https://blog.visual-paradigm.com/de/what-are-the-different-conformance-levels-of-pdf-a/"
+		title="Visual Paradigm - Konformitätsstufen von PDF/A">https://blog.visual-paradigm.com/de/what-are-the-different-conformance-levels-of-pdf-a/</a></li>
 	<li><a data-linktype="external" target="_blank"
-		href="https://kost-ceco.ch/cms/pdf-a-1">https://kost-ceco.ch/cms/pdf-a-1</a></li>
+		href="https://kost-ceco.ch/cms/pdf-a-1" title="KOST - PDF/A-1">https://kost-ceco.ch/cms/pdf-a-1</a></li>
 	<li><a data-linktype="external" target="_blank"
-		href="https://kost-ceco.ch/cms/pdf-a-2">https://kost-ceco.ch/cms/pdf-a-2</a></li>
+		href="https://kost-ceco.ch/cms/pdf-a-2" title="KOST - PDF/A-2">https://kost-ceco.ch/cms/pdf-a-2</a></li>
 	<li><a data-linktype="external" target="_blank"
-		href="https://kost-ceco.ch/cms/pdf-a-3">https://kost-ceco.ch/cms/pdf-a-3</a></li>
+		href="https://kost-ceco.ch/cms/pdf-a-3" title="KOST - PDF/A-3">https://kost-ceco.ch/cms/pdf-a-3</a></li>
 	<li><a data-linktype="external" target="_blank"
-		href="https://kost-ceco.ch/cms/kriterienkatalog">https://kost-ceco.ch/cms/kriterienkatalog</a></li>
+		href="https://kost-ceco.ch/cms/kriterienkatalog"
+		title="KOST - Kriterienkatalog">https://kost-ceco.ch/cms/kriterienkatalog</a></li>
 	<li><a data-linktype="external" target="_blank"
-		href="https://pdfa.org/pdfa-faq/">https://pdfa.org/pdfa-faq/</a></li>
+		href="https://pdfa.org/pdfa-faq/" title="PDF association - PDF/A FAQ">https://pdfa.org/pdfa-faq/</a></li>
 	<li><a data-linktype="external" target="_blank"
-		href="https://pdfa.org/archival-pdf/">https://pdfa.org/archival-pdf/</a></li>
+		href="https://pdfa.org/archival-pdf/"
+		title="PDF association - Archival PDF">https://pdfa.org/archival-pdf/</a></li>
 </ul>
 
 <%=new String(de.nrw.hbz.lzv.services.template.HtmlTemplate.getHtmlFoot())%>
