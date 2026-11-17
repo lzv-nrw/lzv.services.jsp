@@ -121,7 +121,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	max-width: 1000px;
 	width: 100%;
 	margin-left: 0;
 	margin-bottom: 120px;

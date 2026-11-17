@@ -15,7 +15,7 @@
 <ul id="sitemap">
 	<li>Bearbeiten
 		<ul>
-			<li><a href="/lzv-jsp/pdfbox/editMd"
+			<li><a href="/lzv-jsp/pdfbox/editmd"
 				title="Zur Bearbeitung von Metadaten mit PDFbox">PDF-Metadaten
 					ändern</a></li>
 			<li><a href="/lzv-jsp/pdfapilot/createpdfa"

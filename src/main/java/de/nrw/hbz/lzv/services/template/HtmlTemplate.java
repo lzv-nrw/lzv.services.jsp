@@ -108,7 +108,7 @@ public class HtmlTemplate {
 		StringBuffer defMenu = new StringBuffer();
 
 		// Home/Logo
-		defMenu.append("<a id='portal-logo' title='valify' href='/lzv-jsp/about'>");
+		defMenu.append("<a id='portal-logo' title='valify' href='/lzv-jsp/'>");
 		defMenu.append("<img src='/lzv-jsp/images/valify_bildmarke.png' alt='ValiFY' title='ValiFY'></a>");
 
 		// File
@@ -128,7 +128,7 @@ public class HtmlTemplate {
 		defMenu.append("<div class='menu'><button type=\"button\" class=\"menu-trigger\">Bearbeiten");
 		defMenu.append("<i class='fa-solid fa-chevron-down'></i></button>");
 		defMenu.append("<div class='submenu'>" + "<ul>");
-		defMenu.append("<li><a href='/lzv-jsp/pdfbox/editMd'>PDF-Metadatenänderung</a></li>");
+		defMenu.append("<li><a href='/lzv-jsp/pdfbox/editmd'>PDF-Metadatenänderung</a></li>");
 		defMenu.append("<li><a href='/lzv-jsp/pdfapilot/createpdfa'>PDF/A-Erzeugung</a></li>");
 		defMenu.append("</ul></div></div>");
 		defMenu.append("</div>");

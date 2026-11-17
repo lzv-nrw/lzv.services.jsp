@@ -14,7 +14,7 @@
 	<div class="documentDescription description">
 		Weitergehende Informationen zu den jeweiligen Merkmalen der
 		unterschiedlichen PDF/A-Standards sind auf der <a
-			data-linktype="internal" href="/lzv-jsp/about" title="Startseite">Startseite</a> zu
+			data-linktype="internal" href="/lzv-jsp/" title="Startseite">Startseite</a> zu
 		finden.
 	</div>
 </header>
